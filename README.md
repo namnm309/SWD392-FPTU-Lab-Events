@@ -2,7 +2,7 @@
 
 
 
-![DemoDb](https://raw.githubusercontent.com/nammm309/SWD392-Project/main/Other/SWD392.png)
+![DemoDb]([https://raw.githubusercontent.com/nammm309/SWD392-Project/main/Other/SWD392.png](https://github.com/namnm309/SWD392-Project/blob/main/Other/SWD392.png))
 
 
 
