@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ControllerLayer</name>
+    </assembly>
+    <members>
+        <member name="M:ControllerLayer.Controllers.AuthController.LoginWithGoogle(ApplicationLayer.DTO.Auth.GoogleLoginRequest)">
+            <summary>
+            Đăng nhập bằng Google ID Token
+            </summary>
+        </member>
+        <member name="M:ControllerLayer.Controllers.AuthController.Login(ApplicationLayer.DTO.Auth.LoginRequest)">
+            <summary>
+            Đăng nhập bằng email hoặc username và mật khẩu.
+            </summary>
+            <remarks>
+            Trả về AccessToken + RefreshToken. Dùng AccessToken cho các API [Authorize],
+            và dùng RefreshToken để gọi api/auth/refresh khi AccessToken hết hạn.
+            </remarks>
+        </member>
+        <member name="M:ControllerLayer.Controllers.AuthController.Register(ApplicationLayer.DTO.Auth.RegisterRequest)">
+            <summary>
+            Đăng ký tài khoản mới ( ko mail Fpt) (role mặc định là User).
+            </summary>
+            <remarks>
+            Nếu role "User" chưa tồn tại sẽ được tạo tự động.
+            </remarks>
+        </member>
+        <member name="M:ControllerLayer.Controllers.AuthController.Verify(System.String)">
+            <summary>
+            Check token 
+            </summary>        
+        </member>
+        <member name="M:ControllerLayer.Controllers.AuthController.GetAllUsers">
+            <summary>
+            Danh sách tất cả người dùng (yêu cầu JWT).
+            </summary>
+        </member>
+        <member name="M:ControllerLayer.Controllers.AuthController.Refresh(ApplicationLayer.DTO.Auth.RefreshRequest)">
+            Refresh Token (token rotation). 
+        </member>
+    </members>
+</doc>
