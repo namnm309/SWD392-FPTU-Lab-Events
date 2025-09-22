@@ -4,40 +4,48 @@
         <name>ControllerLayer</name>
     </assembly>
     <members>
-        <member name="M:ControllerLayer.Controllers.AuthController.LoginWithGoogle(ApplicationLayer.DTO.Auth.GoogleLoginRequest)">
+        <member name="M:ControllerLayer.Controllers.AuthController.Register(Application.DTOs.Auth.RegisterRequest)">
             <summary>
-            Đăng nhập bằng Google ID Token
-            </summary>
-        </member>
-        <member name="M:ControllerLayer.Controllers.AuthController.Login(ApplicationLayer.DTO.Auth.LoginRequest)">
-            <summary>
-            Đăng nhập bằng email hoặc username và mật khẩu.
+            Đăng ký tài khoản mới (mặc định gán role Student).
             </summary>
             <remarks>
-            Trả về AccessToken + RefreshToken. Dùng AccessToken cho các API [Authorize],
-            và dùng RefreshToken để gọi api/auth/refresh khi AccessToken hết hạn.
+            Truyền email/username/password. Email và username là duy nhất.
             </remarks>
         </member>
-        <member name="M:ControllerLayer.Controllers.AuthController.Register(ApplicationLayer.DTO.Auth.RegisterRequest)">
+        <member name="M:ControllerLayer.Controllers.AuthController.Login(Application.DTOs.Auth.LoginRequest)">
             <summary>
-            Đăng ký tài khoản mới ( ko mail Fpt) (role mặc định là User).
-            </summary>
-            <remarks>
-            Nếu role "User" chưa tồn tại sẽ được tạo tự động.
-            </remarks>
-        </member>
-        <member name="M:ControllerLayer.Controllers.AuthController.Verify(System.String)">
-            <summary>
-            Check token 
-            </summary>        
-        </member>
-        <member name="M:ControllerLayer.Controllers.AuthController.GetAllUsers">
-            <summary>
-            Danh sách tất cả người dùng (yêu cầu JWT).
+            Đăng nhập bằng username hoặc email và mật khẩu.
             </summary>
         </member>
-        <member name="M:ControllerLayer.Controllers.AuthController.Refresh(ApplicationLayer.DTO.Auth.RefreshRequest)">
-            Refresh Token (token rotation). 
+        <member name="M:ControllerLayer.Controllers.AuthController.Refresh(Application.DTOs.Auth.RefreshRequest)">
+            <summary>
+            Lấy access token mới bằng refresh token (rotation).
+            </summary>
+        </member>
+        <member name="M:ControllerLayer.Controllers.AuthController.Logout">
+            <summary>
+            Đăng xuất phiên hiện tại (revoke session).
+            </summary>
+        </member>
+        <member name="M:ControllerLayer.Controllers.AuthController.Me">
+            <summary>
+            Lấy thông tin người dùng hiện tại từ access token.
+            </summary>
+        </member>
+        <member name="M:ControllerLayer.Controllers.AuthController.GoogleStart(System.String,System.String)">
+            <summary>
+            Bắt đầu Google OAuth (trả URL để redirect sang Google).
+            </summary>
+        </member>
+        <member name="M:ControllerLayer.Controllers.AuthController.GoogleCallback(Application.DTOs.Auth.GoogleCallbackRequest)">
+            <summary>
+            Xử lý callback từ Google OAuth code flow.
+            </summary>
+        </member>
+        <member name="M:ControllerLayer.Controllers.AuthController.GoogleToken(Application.DTOs.Auth.GoogleTokenRequest)">
+            <summary>
+            Đăng nhập Google bằng id_token (đơn giản, phù hợp test nhanh/One-tap).
+            </summary>
         </member>
     </members>
 </doc>

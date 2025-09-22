@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\FPT\\PRN222\\FPTU Lab Events\\InfrastructureLayer\\InfrastructureLayer.csproj": {}
+    "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\InfrastructureLayer.csproj": {}
   },
   "projects": {
-    "E:\\FPT\\PRN222\\FPTU Lab Events\\DomainLayer\\DomainLayer.csproj": {
+    "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\DomainLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\FPT\\PRN222\\FPTU Lab Events\\DomainLayer\\DomainLayer.csproj",
+        "projectUniqueName": "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\DomainLayer.csproj",
         "projectName": "DomainLayer",
-        "projectPath": "E:\\FPT\\PRN222\\FPTU Lab Events\\DomainLayer\\DomainLayer.csproj",
+        "projectPath": "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\DomainLayer.csproj",
         "packagesPath": "C:\\Users\\MinhNam\\.nuget\\packages\\",
-        "outputPath": "E:\\FPT\\PRN222\\FPTU Lab Events\\DomainLayer\\obj\\",
+        "outputPath": "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,18 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoWrapper.Core": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -70,14 +82,14 @@
         }
       }
     },
-    "E:\\FPT\\PRN222\\FPTU Lab Events\\InfrastructureLayer\\InfrastructureLayer.csproj": {
+    "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\InfrastructureLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\FPT\\PRN222\\FPTU Lab Events\\InfrastructureLayer\\InfrastructureLayer.csproj",
+        "projectUniqueName": "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\InfrastructureLayer.csproj",
         "projectName": "InfrastructureLayer",
-        "projectPath": "E:\\FPT\\PRN222\\FPTU Lab Events\\InfrastructureLayer\\InfrastructureLayer.csproj",
+        "projectPath": "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\InfrastructureLayer.csproj",
         "packagesPath": "C:\\Users\\MinhNam\\.nuget\\packages\\",
-        "outputPath": "E:\\FPT\\PRN222\\FPTU Lab Events\\InfrastructureLayer\\obj\\",
+        "outputPath": "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -99,8 +111,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\FPT\\PRN222\\FPTU Lab Events\\DomainLayer\\DomainLayer.csproj": {
-                "projectPath": "E:\\FPT\\PRN222\\FPTU Lab Events\\DomainLayer\\DomainLayer.csproj"
+              "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\DomainLayer.csproj": {
+                "projectPath": "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\DomainLayer.csproj"
               }
             }
           }
@@ -121,6 +133,18 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Google.Apis.Auth": {
+              "target": "Package",
+              "version": "[1.68.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.10.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.5, )"
@@ -162,6 +186,10 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.9.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.5.0, )"
             }
           },
           "imports": [

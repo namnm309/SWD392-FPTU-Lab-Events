@@ -10,3 +10,18 @@ E:\FPT\PRN222\FPTU Lab Events\DomainLayer\obj\Debug\net8.0\DomainLayer.dll
 E:\FPT\PRN222\FPTU Lab Events\DomainLayer\obj\Debug\net8.0\refint\DomainLayer.dll
 E:\FPT\PRN222\FPTU Lab Events\DomainLayer\obj\Debug\net8.0\DomainLayer.pdb
 E:\FPT\PRN222\FPTU Lab Events\DomainLayer\obj\Debug\net8.0\ref\DomainLayer.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\DomainLayer\bin\Debug\net8.0\DomainLayer.deps.json
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\DomainLayer\bin\Debug\net8.0\DomainLayer.runtimeconfig.json
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\DomainLayer\bin\Debug\net8.0\DomainLayer.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\DomainLayer\bin\Debug\net8.0\DomainLayer.pdb
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\DomainLayer\obj\Debug\net8.0\DomainLayer.csproj.AssemblyReference.cache
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\DomainLayer\obj\Debug\net8.0\DomainLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\DomainLayer\obj\Debug\net8.0\DomainLayer.AssemblyInfoInputs.cache
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\DomainLayer\obj\Debug\net8.0\DomainLayer.AssemblyInfo.cs
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\DomainLayer\obj\Debug\net8.0\DomainLayer.csproj.CoreCompileInputs.cache
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\DomainLayer\obj\Debug\net8.0\DomainLayer.sourcelink.json
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\DomainLayer\obj\Debug\net8.0\DomainLayer.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\DomainLayer\obj\Debug\net8.0\refint\DomainLayer.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\DomainLayer\obj\Debug\net8.0\DomainLayer.pdb
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\DomainLayer\obj\Debug\net8.0\DomainLayer.genruntimeconfig.cache
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\DomainLayer\obj\Debug\net8.0\ref\DomainLayer.dll

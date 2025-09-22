@@ -5,78 +5,13 @@
     "version": "v1"
   },
   "paths": {
-    "/api/Auth/google": {
+    "/api/auth/register": {
       "post": {
         "tags": [
           "Auth"
         ],
-        "summary": "Đăng nhập bằng Google ID Token",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/GoogleLoginRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/GoogleLoginRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/GoogleLoginRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Auth/login": {
-      "post": {
-        "tags": [
-          "Auth"
-        ],
-        "summary": "Đăng nhập bằng email hoặc username và mật khẩu.",
-        "description": "Trả về AccessToken + RefreshToken. Dùng AccessToken cho các API [Authorize],\r\nvà dùng RefreshToken để gọi api/auth/refresh khi AccessToken hết hạn.",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/LoginRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/LoginRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/LoginRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Auth/register": {
-      "post": {
-        "tags": [
-          "Auth"
-        ],
-        "summary": "Đăng ký tài khoản mới ( ko mail Fpt) (role mặc định là User).",
-        "description": "Nếu role \"User\" chưa tồn tại sẽ được tạo tự động.",
+        "summary": "Đăng ký tài khoản mới (mặc định gán role Student).",
+        "description": "Truyền email/username/password. Email và username là duy nhất.",
         "requestBody": {
           "content": {
             "application/json": {
@@ -103,15 +38,112 @@
         }
       }
     },
-    "/api/Auth/verify": {
+    "/api/auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Đăng nhập bằng username hoặc email và mật khẩu.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/auth/refresh": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Lấy access token mới bằng refresh token (rotation).",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefreshRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefreshRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefreshRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/auth/logout": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Đăng xuất phiên hiện tại (revoke session).",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/auth/me": {
       "get": {
         "tags": [
           "Auth"
         ],
-        "summary": "Check token",
+        "summary": "Lấy thông tin người dùng hiện tại từ access token.",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/auth/google/start": {
+      "get": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Bắt đầu Google OAuth (trả URL để redirect sang Google).",
         "parameters": [
           {
-            "name": "token",
+            "name": "redirectUri",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "state",
             "in": "query",
             "schema": {
               "type": "string"
@@ -125,12 +157,31 @@
         }
       }
     },
-    "/api/Auth/users": {
-      "get": {
+    "/api/auth/google/callback": {
+      "post": {
         "tags": [
           "Auth"
         ],
-        "summary": "Danh sách tất cả người dùng (yêu cầu JWT).",
+        "summary": "Xử lý callback từ Google OAuth code flow.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GoogleCallbackRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GoogleCallbackRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GoogleCallbackRequest"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -138,26 +189,27 @@
         }
       }
     },
-    "/api/Auth/refresh": {
+    "/api/auth/google/token": {
       "post": {
         "tags": [
           "Auth"
         ],
+        "summary": "Đăng nhập Google bằng id_token (đơn giản, phù hợp test nhanh/One-tap).",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RefreshRequest"
+                "$ref": "#/components/schemas/GoogleTokenRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/RefreshRequest"
+                "$ref": "#/components/schemas/GoogleTokenRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/RefreshRequest"
+                "$ref": "#/components/schemas/GoogleTokenRequest"
               }
             }
           }
@@ -211,7 +263,21 @@
   },
   "components": {
     "schemas": {
-      "GoogleLoginRequest": {
+      "GoogleCallbackRequest": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "nullable": true
+          },
+          "redirectUri": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GoogleTokenRequest": {
         "type": "object",
         "properties": {
           "idToken": {
@@ -224,7 +290,7 @@
       "LoginRequest": {
         "type": "object",
         "properties": {
-          "account": {
+          "identifier": {
             "type": "string",
             "nullable": true
           },
@@ -248,11 +314,11 @@
       "RegisterRequest": {
         "type": "object",
         "properties": {
-          "username": {
+          "email": {
             "type": "string",
             "nullable": true
           },
-          "fullname": {
+          "username": {
             "type": "string",
             "nullable": true
           },
@@ -260,15 +326,11 @@
             "type": "string",
             "nullable": true
           },
-          "email": {
+          "fullname": {
             "type": "string",
             "nullable": true
           },
           "mssv": {
-            "type": "string",
-            "nullable": true
-          },
-          "phone": {
             "type": "string",
             "nullable": true
           }
@@ -302,7 +364,7 @@
     "securitySchemes": {
       "Bearer": {
         "type": "http",
-        "description": "Nhập token theo định dạng: Bearer {token}",
+        "description": "Nhập JWT Bearer token",
         "scheme": "bearer",
         "bearerFormat": "JWT"
       }
