@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Application.Services.Auth;
 using DotNetEnv;
+using Application.Services.User;
 
 namespace ControllerLayer
 {
@@ -62,6 +63,7 @@ namespace ControllerLayer
             // JWT Service
             builder.Services.AddScoped<IJwtService, JwtService>();
             builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<IUserService, UserService>();
 
             // Load .env (optional)
             try { Env.Load(); } catch { }

@@ -341,6 +341,6 @@ E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\ob
 E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ref\ControllerLayer.dll
 E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\DotNetEnv.dll
 E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Sprache.dll
-E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.xml
 E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ControllerLayer.xml
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

@@ -6,45 +6,67 @@
     <members>
         <member name="M:ControllerLayer.Controllers.AuthController.Register(Application.DTOs.Auth.RegisterRequest)">
             <summary>
-            Đăng ký tài khoản mới (mặc định gán role Student).
+            Đăng ký tài khoản mới (kiểu tk bth ko mail FPT) (mặc định gán role Student).
             </summary>
-            <remarks>
-            Truyền email/username/password. Email và username là duy nhất.
-            </remarks>
         </member>
         <member name="M:ControllerLayer.Controllers.AuthController.Login(Application.DTOs.Auth.LoginRequest)">
             <summary>
             Đăng nhập bằng username hoặc email và mật khẩu.
             </summary>
         </member>
-        <member name="M:ControllerLayer.Controllers.AuthController.Refresh(Application.DTOs.Auth.RefreshRequest)">
+        <member name="M:ControllerLayer.Controllers.AuthController.GoogleToken(Application.DTOs.Auth.GoogleTokenRequest)">
             <summary>
-            Lấy access token mới bằng refresh token (rotation).
+            Đăng nhập Google bằng id_token (simple).
             </summary>
         </member>
-        <member name="M:ControllerLayer.Controllers.AuthController.Logout">
+        <member name="M:ControllerLayer.Controllers.AuthController.Refresh(Application.DTOs.Auth.RefreshRequest)">
             <summary>
-            Đăng xuất phiên hiện tại (revoke session).
+            Lấy access token 
             </summary>
         </member>
         <member name="M:ControllerLayer.Controllers.AuthController.Me">
             <summary>
-            Lấy thông tin người dùng hiện tại từ access token.
+            Thông tin hiện tại qua token.
             </summary>
         </member>
         <member name="M:ControllerLayer.Controllers.AuthController.GoogleStart(System.String,System.String)">
             <summary>
-            Bắt đầu Google OAuth (trả URL để redirect sang Google).
+            C1(step1):Fe call -> nhận URL -> redirect user qua cái URL này.
             </summary>
         </member>
         <member name="M:ControllerLayer.Controllers.AuthController.GoogleCallback(Application.DTOs.Auth.GoogleCallbackRequest)">
             <summary>
-            Xử lý callback từ Google OAuth code flow.
+            C1(step2):convert từ cái google trả -> id_token -> verify -> trả jwt.
             </summary>
         </member>
-        <member name="M:ControllerLayer.Controllers.AuthController.GoogleToken(Application.DTOs.Auth.GoogleTokenRequest)">
+        <member name="M:ControllerLayer.Controllers.UsersController.List(System.Nullable{System.Int32},System.Nullable{System.Int32})">
             <summary>
-            Đăng nhập Google bằng id_token (đơn giản, phù hợp test nhanh/One-tap).
+            Danh sách user (phân trang tùy chọn)
+            </summary>
+        </member>
+        <member name="M:ControllerLayer.Controllers.UsersController.GetById(System.Guid)">
+            <summary>
+            Xem chi tiết user theo Id
+            </summary>
+        </member>
+        <member name="M:ControllerLayer.Controllers.UsersController.Create(Application.DTOs.User.CreateUserRequest)">
+            <summary>
+            Tạo user mới
+            </summary>
+        </member>
+        <member name="M:ControllerLayer.Controllers.UsersController.Update(System.Guid,Application.DTOs.User.UpdateUserRequest)">
+            <summary>
+            Cập nhật thông tin user
+            </summary>
+        </member>
+        <member name="M:ControllerLayer.Controllers.UsersController.UpdateStatus(System.Guid,Application.DTOs.User.UpdateStatusRequest)">
+            <summary>
+            Cập nhật trạng thái user (Active/Inactive/Locked)
+            </summary>
+        </member>
+        <member name="M:ControllerLayer.Controllers.UsersController.Delete(System.Guid)">
+            <summary>
+            Xóa user
             </summary>
         </member>
     </members>
