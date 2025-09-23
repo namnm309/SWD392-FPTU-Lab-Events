@@ -45,6 +45,70 @@ namespace InfrastructureLayer.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("tbl_roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("00000000-0000-0000-0000-000000000001"),
+                            CreatedAt = new DateTime(2025, 9, 22, 15, 17, 20, 324, DateTimeKind.Utc),
+                            LastUpdatedAt = new DateTime(2025, 9, 22, 15, 17, 20, 324, DateTimeKind.Utc),
+                            description = "System administrator",
+                            name = "Admin"
+                        },
+                        new
+                        {
+                            Id = new Guid("00000000-0000-0000-0000-000000000002"),
+                            CreatedAt = new DateTime(2025, 9, 22, 15, 17, 20, 324, DateTimeKind.Utc),
+                            LastUpdatedAt = new DateTime(2025, 9, 22, 15, 17, 20, 324, DateTimeKind.Utc),
+                            description = "Lecturer",
+                            name = "Lecturer"
+                        },
+                        new
+                        {
+                            Id = new Guid("00000000-0000-0000-0000-000000000003"),
+                            CreatedAt = new DateTime(2025, 9, 22, 15, 17, 20, 324, DateTimeKind.Utc),
+                            LastUpdatedAt = new DateTime(2025, 9, 22, 15, 17, 20, 324, DateTimeKind.Utc),
+                            description = "Student",
+                            name = "Student"
+                        });
+                });
+
+            modelBuilder.Entity("DomainLayer.Entities.UserSession", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Device")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("ExpiresAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("IpAddress")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("LastUpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("RefreshTokenHash")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("RevokedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("tbl_user_sessions");
                 });
 
             modelBuilder.Entity("DomainLayer.Entities.Users", b =>
@@ -83,6 +147,12 @@ namespace InfrastructureLayer.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("Email")
+                        .IsUnique();
+
+                    b.HasIndex("Username")
+                        .IsUnique();
+
                     b.ToTable("tbl_users");
                 });
 
@@ -99,6 +169,17 @@ namespace InfrastructureLayer.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("tbl_users_roles");
+                });
+
+            modelBuilder.Entity("DomainLayer.Entities.UserSession", b =>
+                {
+                    b.HasOne("DomainLayer.Entities.Users", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("tbl_users_roles", b =>
