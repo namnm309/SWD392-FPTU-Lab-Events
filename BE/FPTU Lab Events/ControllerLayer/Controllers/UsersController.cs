@@ -11,7 +11,7 @@ namespace ControllerLayer.Controllers
     /// <summary>
     /// Quản lý người dùng (chỉ Admin)
     /// </summary>
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public class UsersController : ControllerBase
     {
         private readonly IUserService _userService;

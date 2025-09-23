@@ -3,10 +3,12 @@ using InfrastructureLayer.Core.JWT;
 using InfrastructureLayer.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Application.Services.Auth;
 using DotNetEnv;
 using Application.Services.User;
+using InfrastructureLayer.Core.Mail;
 
 namespace ControllerLayer
 {
@@ -60,6 +62,18 @@ namespace ControllerLayer
             // HttpClient
             builder.Services.AddHttpClient();
 
+			// Mail service
+			builder.Services.AddSingleton<IMailService>(sp =>
+			{
+				var cfg = builder.Configuration;
+				var server = cfg["Mail:SmtpServer"] ?? "smtp.gmail.com";
+				var portStr = cfg["Mail:SmtpPort"];
+				var port = int.TryParse(portStr, out var p) ? p : 587;
+				var user = cfg["Mail:Username"] ?? cfg["SMTPEmail"] ?? string.Empty;
+				var pass = cfg["Mail:Password"] ?? cfg["SMTPPassword"] ?? string.Empty;
+				return new MailService(server, port, user, pass);
+			});
+
             // JWT Service
             builder.Services.AddScoped<IJwtService, JwtService>();
             builder.Services.AddScoped<IAuthService, AuthService>();
@@ -108,7 +122,17 @@ namespace ControllerLayer
 
             app.MapControllers();
 
+			// Auto apply EF Core migrations at startup
+			ApplyPendingMigrations(app);
+
             app.Run();
         }
+
+		private static void ApplyPendingMigrations(WebApplication app)
+		{
+			using var scope = app.Services.CreateScope();
+			var dbContext = scope.ServiceProvider.GetRequiredService<LabDbContext>();
+			dbContext.Database.Migrate();
+		}
     }
 }

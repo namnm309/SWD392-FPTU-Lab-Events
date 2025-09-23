@@ -224,7 +224,7 @@
         "tags": [
           "Users"
         ],
-        "summary": "Danh sách user (phân trang tùy chọn)",
+        "summary": "Danh sách user pagination",
         "parameters": [
           {
             "name": "page",
@@ -253,7 +253,7 @@
         "tags": [
           "Users"
         ],
-        "summary": "Tạo user mới",
+        "summary": "Tạo user",
         "requestBody": {
           "content": {
             "application/json": {
@@ -307,7 +307,7 @@
         "tags": [
           "Users"
         ],
-        "summary": "Cập nhật thông tin user",
+        "summary": "Update user",
         "parameters": [
           {
             "name": "id",
@@ -348,7 +348,6 @@
         "tags": [
           "Users"
         ],
-        "summary": "Xóa user",
         "parameters": [
           {
             "name": "id",
@@ -372,7 +371,7 @@
         "tags": [
           "Users"
         ],
-        "summary": "Cập nhật trạng thái user (Active/Inactive/Locked)",
+        "summary": "Update status user (Active/Inactive/Locked)",
         "parameters": [
           {
             "name": "id",

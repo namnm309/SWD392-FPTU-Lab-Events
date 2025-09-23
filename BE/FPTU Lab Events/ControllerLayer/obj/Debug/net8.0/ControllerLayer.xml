@@ -41,7 +41,7 @@
         </member>
         <member name="M:ControllerLayer.Controllers.UsersController.List(System.Nullable{System.Int32},System.Nullable{System.Int32})">
             <summary>
-            Danh sách user (phân trang tùy chọn)
+            Danh sách user pagination
             </summary>
         </member>
         <member name="M:ControllerLayer.Controllers.UsersController.GetById(System.Guid)">
@@ -51,22 +51,17 @@
         </member>
         <member name="M:ControllerLayer.Controllers.UsersController.Create(Application.DTOs.User.CreateUserRequest)">
             <summary>
-            Tạo user mới
+            Tạo user
             </summary>
         </member>
         <member name="M:ControllerLayer.Controllers.UsersController.Update(System.Guid,Application.DTOs.User.UpdateUserRequest)">
             <summary>
-            Cập nhật thông tin user
+            Update user
             </summary>
         </member>
         <member name="M:ControllerLayer.Controllers.UsersController.UpdateStatus(System.Guid,Application.DTOs.User.UpdateStatusRequest)">
             <summary>
-            Cập nhật trạng thái user (Active/Inactive/Locked)
-            </summary>
-        </member>
-        <member name="M:ControllerLayer.Controllers.UsersController.Delete(System.Guid)">
-            <summary>
-            Xóa user
+            Update status user (Active/Inactive/Locked)
             </summary>
         </member>
     </members>

@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\controllerlayer\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|solutionrelative:controllerlayer\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\controllerlayer\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|solutionrelative:controllerlayer\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\controllerlayer\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|solutionrelative:controllerlayer\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\controllerlayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|solutionrelative:controllerlayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\controllerlayer\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|solutionrelative:controllerlayer\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\controllerlayer\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|solutionrelative:controllerlayer\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\controllerlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|solutionrelative:controllerlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\controllerlayer\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|solutionrelative:controllerlayer\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\controllerlayer\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|solutionrelative:controllerlayer\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E605F2B-BCB0-43ED-9265-3A04AF1E55A0}|ApplicationLayer\\ApplicationLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\applicationlayer\\services\\auth\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8E605F2B-BCB0-43ED-9265-3A04AF1E55A0}|ApplicationLayer\\ApplicationLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\applicationlayer\\services\\auth\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E605F2B-BCB0-43ED-9265-3A04AF1E55A0}|ApplicationLayer\\ApplicationLayer.csproj|solutionrelative:applicationlayer\\services\\auth\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\controllerlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|solutionrelative:controllerlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{907A19BC-4278-4DB9-8684-E700EEFBC7C6}|InfrastructureLayer\\InfrastructureLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\infrastructurelayer\\data\\labdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -122,7 +126,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,45 +134,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": ".env",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\.env",
+              "RelativeDocumentMoniker": "ControllerLayer\\.env",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\.env",
+              "RelativeToolTip": "ControllerLayer\\.env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-23T03:27:40.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UsersController.cs",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "ControllerLayer\\Controllers\\UsersController.cs",
               "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\Controllers\\UsersController.cs",
               "RelativeToolTip": "ControllerLayer\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAcwGQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T18:22:10.23Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "ControllerLayer\\Controllers\\AuthController.cs",
-              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "ControllerLayer\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAAwJ8AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T17:44:37.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ControllerLayer\\appsettings.Development.json",
               "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\appsettings.Development.json",
               "RelativeToolTip": "ControllerLayer\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-22T15:44:21.034Z"
+              "WhenOpened": "2025-09-22T15:44:21.034Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "JwtService.cs",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Core\\JWT\\JwtService.cs",
               "RelativeDocumentMoniker": "InfrastructureLayer\\Core\\JWT\\JwtService.cs",
@@ -180,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Mail.cs",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Core\\Mail\\Mail.cs",
               "RelativeDocumentMoniker": "InfrastructureLayer\\Core\\Mail\\Mail.cs",
@@ -192,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Payload.cs",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Core\\JWT\\Payload.cs",
               "RelativeDocumentMoniker": "InfrastructureLayer\\Core\\JWT\\Payload.cs",
@@ -204,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "DomainLayer.csproj",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\DomainLayer.csproj",
               "RelativeDocumentMoniker": "DomainLayer\\DomainLayer.csproj",
@@ -216,7 +221,45 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\appsettings.json",
+              "RelativeDocumentMoniker": "ControllerLayer\\appsettings.json",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\appsettings.json",
+              "RelativeToolTip": "ControllerLayer\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-18T06:09:44.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\Program.cs",
+              "RelativeDocumentMoniker": "ControllerLayer\\Program.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\Program.cs",
+              "RelativeToolTip": "ControllerLayer\\Program.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAgwHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T03:51:08.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ControllerLayer\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ControllerLayer\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAAwJ8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T17:44:37.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "IAuth.cs",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ApplicationLayer\\Services\\Auth\\IAuth.cs",
               "RelativeDocumentMoniker": "ApplicationLayer\\Services\\Auth\\IAuth.cs",
@@ -228,19 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\appsettings.json",
-              "RelativeDocumentMoniker": "ControllerLayer\\appsettings.json",
-              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\appsettings.json",
-              "RelativeToolTip": "ControllerLayer\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-18T06:09:44.618Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "AuthService.cs",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ApplicationLayer\\Services\\Auth\\AuthService.cs",
               "RelativeDocumentMoniker": "ApplicationLayer\\Services\\Auth\\AuthService.cs",
@@ -252,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Mapping.cs",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ApplicationLayer\\Mapping\\Mapping.cs",
               "RelativeDocumentMoniker": "ApplicationLayer\\Mapping\\Mapping.cs",
@@ -264,19 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\Program.cs",
-              "RelativeDocumentMoniker": "ControllerLayer\\Program.cs",
-              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\Program.cs",
-              "RelativeToolTip": "ControllerLayer\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAgwD4AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T03:51:08.342Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "InfrastructureLayer.csproj",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\InfrastructureLayer.csproj",
               "RelativeDocumentMoniker": "InfrastructureLayer\\InfrastructureLayer.csproj",
@@ -288,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "LabDbContext.cs",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Data\\LabDbContext.cs",
               "RelativeDocumentMoniker": "InfrastructureLayer\\Data\\LabDbContext.cs",
@@ -300,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ControllerLayer.csproj",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\ControllerLayer.csproj",
               "RelativeDocumentMoniker": "ControllerLayer\\ControllerLayer.csproj",
@@ -312,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Jwt.cs",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Constants\\Jwt.cs",
               "RelativeDocumentMoniker": "DomainLayer\\Constants\\Jwt.cs",
@@ -324,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ApplicationLayer.csproj",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ApplicationLayer\\ApplicationLayer.csproj",
               "RelativeDocumentMoniker": "ApplicationLayer\\ApplicationLayer.csproj",
@@ -336,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Users.cs",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Entities\\Users.cs",
               "RelativeDocumentMoniker": "DomainLayer\\Entities\\Users.cs",
@@ -348,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "UserStatus.cs",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Enum\\UserStatus.cs",
               "RelativeDocumentMoniker": "DomainLayer\\Enum\\UserStatus.cs",
@@ -360,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "General.cs",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Constants\\General.cs",
               "RelativeDocumentMoniker": "DomainLayer\\Constants\\General.cs",
@@ -372,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Constants.cs",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Constants\\Constants.cs",
               "RelativeDocumentMoniker": "DomainLayer\\Constants\\Constants.cs",
@@ -384,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Repository\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "InfrastructureLayer\\Repository\\IGenericRepository.cs",
@@ -396,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Roles.cs",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Entities\\Roles.cs",
               "RelativeDocumentMoniker": "DomainLayer\\Entities\\Roles.cs",
@@ -408,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "LabContextFactory.cs",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Data\\LabContextFactory.cs",
               "RelativeDocumentMoniker": "InfrastructureLayer\\Data\\LabContextFactory.cs",
@@ -420,7 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "LabDbContextModelSnapshot.cs",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Migrations\\LabDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "InfrastructureLayer\\Migrations\\LabDbContextModelSnapshot.cs",
@@ -432,7 +451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "library.txt",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\library.txt",
               "RelativeDocumentMoniker": "InfrastructureLayer\\library.txt",
@@ -444,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Entities\\BaseEntity.cs",
               "RelativeDocumentMoniker": "DomainLayer\\Entities\\BaseEntity.cs",
@@ -456,7 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "ControllerLayer\\WeatherForecast.cs",
