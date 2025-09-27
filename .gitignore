@@ -652,6 +652,43 @@ buck-out/
 ### Vercel ###
 .vercel
 
+### React Frontend Specific ###
+# React dependencies
+fe/node_modules/
+fe/.pnp
+fe/.pnp.js
+
+# React testing
+fe/coverage/
+
+# React production build
+fe/build/
+fe/dist/
+
+# React development files
+fe/.env.local
+fe/.env.development.local
+fe/.env.test.local
+fe/.env.production.local
+
+# React cache
+fe/.cache/
+fe/.parcel-cache/
+fe/.nyc_output/
+
+# React IDE files
+fe/.vscode/
+fe/.idea/
+
+# React logs
+fe/npm-debug.log*
+fe/yarn-debug.log*
+fe/yarn-error.log*
+
+# React temporary files
+fe/.DS_Store
+fe/Thumbs.db
+
 ### VisualStudioCode ###
 !.vscode/*.code-snippets
 
