@@ -17,10 +17,20 @@ namespace InfrastructureLayer.Data
 
         public DbSet<Users> Users { get; set; }
 
+        public DbSet<UserSession> UserSessions { get; set; }
+
         //Cấu hình mô hình dữ liệu (nếu cần) bằng cách override phương thức OnModelCreating
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Users>()
+                .HasIndex(u => u.Email)
+                .IsUnique();
+
+            modelBuilder.Entity<Users>()
+                .HasIndex(u => u.Username)
+                .IsUnique();
 
             modelBuilder.Entity<Users>()
                 .HasMany(u => u.Roles)
@@ -40,6 +50,18 @@ namespace InfrastructureLayer.Data
                         .HasConstraintName("FK_tbl_users_roles_users")
                         .OnDelete(DeleteBehavior.Cascade)
                 );
+
+            // Seed roles - use static timestamps matching migration to avoid non-deterministic model
+            var roleAdminId = Guid.Parse("00000000-0000-0000-0000-000000000001");
+            var roleLecturerId = Guid.Parse("00000000-0000-0000-0000-000000000002");
+            var roleStudentId = Guid.Parse("00000000-0000-0000-0000-000000000003");
+            var seedTime = new DateTime(2025, 9, 22, 15, 17, 20, 324, DateTimeKind.Utc);
+
+            modelBuilder.Entity<Roles>().HasData(
+                new Roles { Id = roleAdminId, name = "Admin", description = "System administrator", CreatedAt = seedTime, LastUpdatedAt = seedTime },
+                new Roles { Id = roleLecturerId, name = "Lecturer", description = "Lecturer", CreatedAt = seedTime, LastUpdatedAt = seedTime },
+                new Roles { Id = roleStudentId, name = "Student", description = "Student", CreatedAt = seedTime, LastUpdatedAt = seedTime }
+            );
         }
 
     }
