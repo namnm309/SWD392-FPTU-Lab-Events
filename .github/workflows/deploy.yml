@@ -21,7 +21,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Phiên bản Node.js phù hợp với create-react-app
+          node-version: '16' # Thay đổi từ '20' xuống '16' để tương thích với react-scripts 5.0.1
 
       # Bước 3: Cài đặt dependencies trong thư mục fe
       - name: Install dependencies
@@ -39,14 +39,15 @@ jobs:
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
 
-      # Bước 6: Triển khai lên Vercel
+      # Bước 6: Triển khai lên Vercel (Chỉnh sửa để chạy từ trong thư mục fe)
       - name: Deploy to Vercel
         run: |
           if [ "${{ github.event_name }}" = "push" ]; then
-            vercel --prod --token ${{ secrets.VERCEL_TOKEN }} ./fe
+            vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
           else
-            vercel --token ${{ secrets.VERCEL_TOKEN }} ./fe
+            vercel --token ${{ secrets.VERCEL_TOKEN }}
           fi
+        working-directory: ./fe # Chạy lệnh vercel từ bên trong thư mục fe
         env:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
