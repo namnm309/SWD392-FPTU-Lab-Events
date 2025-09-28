@@ -10,14 +10,14 @@
         "projectUniqueName": "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\DomainLayer.csproj",
         "projectName": "DomainLayer",
         "projectPath": "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\DomainLayer.csproj",
-        "packagesPath": "C:\\Users\\MinhNam\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Ngoc Lan\\.nuget\\packages\\",
         "outputPath": "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MinhNam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ngoc Lan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -88,14 +87,14 @@
         "projectUniqueName": "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\InfrastructureLayer.csproj",
         "projectName": "InfrastructureLayer",
         "projectPath": "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\InfrastructureLayer.csproj",
-        "packagesPath": "C:\\Users\\MinhNam\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Ngoc Lan\\.nuget\\packages\\",
         "outputPath": "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MinhNam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ngoc Lan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -104,7 +103,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
