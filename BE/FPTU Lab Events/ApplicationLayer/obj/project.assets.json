@@ -2491,7 +2491,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MinhNam\\.nuget\\packages\\": {},
+    "C:\\Users\\Ngoc Lan\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -2500,14 +2500,14 @@
       "projectUniqueName": "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ApplicationLayer\\ApplicationLayer.csproj",
       "projectName": "ApplicationLayer",
       "projectPath": "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ApplicationLayer\\ApplicationLayer.csproj",
-      "packagesPath": "C:\\Users\\MinhNam\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Ngoc Lan\\.nuget\\packages\\",
       "outputPath": "E:\\FPT\\Kì 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ApplicationLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\MinhNam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ngoc Lan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2516,7 +2516,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

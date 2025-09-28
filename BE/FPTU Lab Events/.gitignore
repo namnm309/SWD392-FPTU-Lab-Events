@@ -1,0 +1,15 @@
+**/.env
+**/.env.*
+!**/env.sample
+!**/.env.example
+
+# IDE and build artifacts
+.vs/
+**/bin/
+**/obj/
+
+# User-specific/temporary
+*.user
+*.suo
+*.cache
+*.log
