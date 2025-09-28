@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { AdminDashboard } from './features';
 import './App.css';
 
 function App() {
+  const [showAdmin, setShowAdmin] = useState(false);
+
+  if (showAdmin) {
+    return <AdminDashboard />;
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="simple-home">
+        <div className="simple-content">
+          <h1>FPT Lab Events</h1>
+          <p>Click the button below to access the Admin Dashboard</p>
+          <button 
+            className="btn btn-primary"
+            onClick={() => setShowAdmin(true)}
+          >
+            Go to Admin Dashboard
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
