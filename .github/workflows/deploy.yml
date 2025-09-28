@@ -4,9 +4,13 @@ on:
   push:
     branches:
       - main # Triển khai khi push lên nhánh main
+      - NamDevFe # Thêm nhánh NamDevFe
+      - PhucDev # Thêm nhánh PhucDev
   pull_request:
     branches:
       - main # Chạy khi có pull request vào nhánh main
+      - NamDevFe # Thêm pull request cho nhánh NamDevFe
+      - PhucDev # Thêm pull request cho nhánh PhucDev
 
 jobs:
   deploy:
