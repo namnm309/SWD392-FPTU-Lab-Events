@@ -1,0 +1,36 @@
+E:\FPT\PRN222\FPTU Lab Events\ApplicationLayer\bin\Debug\net8.0\ApplicationLayer.deps.json
+E:\FPT\PRN222\FPTU Lab Events\ApplicationLayer\bin\Debug\net8.0\ApplicationLayer.dll
+E:\FPT\PRN222\FPTU Lab Events\ApplicationLayer\bin\Debug\net8.0\ApplicationLayer.pdb
+E:\FPT\PRN222\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\FPT\PRN222\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.AssemblyInfoInputs.cache
+E:\FPT\PRN222\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.AssemblyInfo.cs
+E:\FPT\PRN222\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.csproj.CoreCompileInputs.cache
+E:\FPT\PRN222\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.sourcelink.json
+E:\FPT\PRN222\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.dll
+E:\FPT\PRN222\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\refint\ApplicationLayer.dll
+E:\FPT\PRN222\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.pdb
+E:\FPT\PRN222\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\ref\ApplicationLayer.dll
+E:\FPT\PRN222\FPTU Lab Events\ApplicationLayer\bin\Debug\net8.0\DomainLayer.dll
+E:\FPT\PRN222\FPTU Lab Events\ApplicationLayer\bin\Debug\net8.0\InfrastructureLayer.dll
+E:\FPT\PRN222\FPTU Lab Events\ApplicationLayer\bin\Debug\net8.0\DomainLayer.pdb
+E:\FPT\PRN222\FPTU Lab Events\ApplicationLayer\bin\Debug\net8.0\InfrastructureLayer.pdb
+E:\FPT\PRN222\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.csproj.AssemblyReference.cache
+E:\FPT\PRN222\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\Applicat.033E422A.Up2Date
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.csproj.AssemblyReference.cache
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.AssemblyInfoInputs.cache
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.AssemblyInfo.cs
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.csproj.CoreCompileInputs.cache
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.sourcelink.json
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\refint\ApplicationLayer.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.pdb
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ApplicationLayer\bin\Debug\net8.0\ApplicationLayer.deps.json
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ApplicationLayer\bin\Debug\net8.0\ApplicationLayer.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ApplicationLayer\bin\Debug\net8.0\ApplicationLayer.pdb
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ApplicationLayer\bin\Debug\net8.0\DomainLayer.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ApplicationLayer\bin\Debug\net8.0\InfrastructureLayer.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ApplicationLayer\bin\Debug\net8.0\DomainLayer.pdb
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ApplicationLayer\bin\Debug\net8.0\InfrastructureLayer.pdb
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\Applicat.033E422A.Up2Date
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ApplicationLayer\obj\Debug\net8.0\ref\ApplicationLayer.dll

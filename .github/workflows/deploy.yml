@@ -1,0 +1,57 @@
+name: Deploy React to Vercel
+
+on:
+  push:
+    branches:
+      - main # Triển khai khi push lên nhánh main
+      - NamDevFe # Thêm nhánh NamDevFe
+      - PhucDev # Thêm nhánh PhucDev
+  pull_request:
+    branches:
+      - main # Chạy khi có pull request vào nhánh main
+      - NamDevFe # Thêm pull request cho nhánh NamDevFe
+      - PhucDev # Thêm pull request cho nhánh PhucDev
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Bước 1: Checkout mã nguồn
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Bước 2: Cài đặt Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16' # Thay đổi từ '20' xuống '16' để tương thích với react-scripts 5.0.1
+
+      # Bước 3: Cài đặt dependencies trong thư mục fe
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./fe # Chỉ định thư mục fe
+
+      # Bước 4: Build dự án React
+      - name: Build project
+        run: npm run build
+        working-directory: ./fe # Chỉ định thư mục fe
+        env:
+          CI: true # Đảm bảo build trong môi trường CI
+
+      # Bước 5: Cài đặt Vercel CLI
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+
+      # Bước 6: Triển khai lên Vercel (Chỉnh sửa để chạy từ trong thư mục fe)
+      - name: Deploy to Vercel
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
+          else
+            vercel --token ${{ secrets.VERCEL_TOKEN }}
+          fi
+        working-directory: ./fe # Chạy lệnh vercel từ bên trong thư mục fe
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}

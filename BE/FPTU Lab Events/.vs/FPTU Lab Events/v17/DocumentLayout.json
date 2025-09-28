@@ -1,0 +1,511 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\controllerlayer\\controllerlayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|solutionrelative:controllerlayer\\controllerlayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\controllerlayer\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|solutionrelative:controllerlayer\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\controllerlayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|solutionrelative:controllerlayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\controllerlayer\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|solutionrelative:controllerlayer\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\controllerlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|solutionrelative:controllerlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\controllerlayer\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|solutionrelative:controllerlayer\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\controllerlayer\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|solutionrelative:controllerlayer\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\controllerlayer\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|solutionrelative:controllerlayer\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E605F2B-BCB0-43ED-9265-3A04AF1E55A0}|ApplicationLayer\\ApplicationLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\applicationlayer\\services\\auth\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E605F2B-BCB0-43ED-9265-3A04AF1E55A0}|ApplicationLayer\\ApplicationLayer.csproj|solutionrelative:applicationlayer\\services\\auth\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E605F2B-BCB0-43ED-9265-3A04AF1E55A0}|ApplicationLayer\\ApplicationLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\applicationlayer\\services\\auth\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E605F2B-BCB0-43ED-9265-3A04AF1E55A0}|ApplicationLayer\\ApplicationLayer.csproj|solutionrelative:applicationlayer\\services\\auth\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907A19BC-4278-4DB9-8684-E700EEFBC7C6}|InfrastructureLayer\\InfrastructureLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\infrastructurelayer\\data\\labdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907A19BC-4278-4DB9-8684-E700EEFBC7C6}|InfrastructureLayer\\InfrastructureLayer.csproj|solutionrelative:infrastructurelayer\\data\\labdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E605F2B-BCB0-43ED-9265-3A04AF1E55A0}|ApplicationLayer\\ApplicationLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\applicationlayer\\applicationlayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8E605F2B-BCB0-43ED-9265-3A04AF1E55A0}|ApplicationLayer\\ApplicationLayer.csproj|solutionrelative:applicationlayer\\applicationlayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E605F2B-BCB0-43ED-9265-3A04AF1E55A0}|ApplicationLayer\\ApplicationLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\applicationlayer\\mapping\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E605F2B-BCB0-43ED-9265-3A04AF1E55A0}|ApplicationLayer\\ApplicationLayer.csproj|solutionrelative:applicationlayer\\mapping\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66CFDF6D-B265-4202-AB29-A973B2BED99A}|DomainLayer\\DomainLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\domainlayer\\domainlayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{66CFDF6D-B265-4202-AB29-A973B2BED99A}|DomainLayer\\DomainLayer.csproj|solutionrelative:domainlayer\\domainlayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907A19BC-4278-4DB9-8684-E700EEFBC7C6}|InfrastructureLayer\\InfrastructureLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\infrastructurelayer\\core\\mail\\mail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907A19BC-4278-4DB9-8684-E700EEFBC7C6}|InfrastructureLayer\\InfrastructureLayer.csproj|solutionrelative:infrastructurelayer\\core\\mail\\mail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907A19BC-4278-4DB9-8684-E700EEFBC7C6}|InfrastructureLayer\\InfrastructureLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\infrastructurelayer\\core\\jwt\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907A19BC-4278-4DB9-8684-E700EEFBC7C6}|InfrastructureLayer\\InfrastructureLayer.csproj|solutionrelative:infrastructurelayer\\core\\jwt\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907A19BC-4278-4DB9-8684-E700EEFBC7C6}|InfrastructureLayer\\InfrastructureLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\infrastructurelayer\\core\\jwt\\payload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907A19BC-4278-4DB9-8684-E700EEFBC7C6}|InfrastructureLayer\\InfrastructureLayer.csproj|solutionrelative:infrastructurelayer\\core\\jwt\\payload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66CFDF6D-B265-4202-AB29-A973B2BED99A}|DomainLayer\\DomainLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\domainlayer\\enum\\userstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66CFDF6D-B265-4202-AB29-A973B2BED99A}|DomainLayer\\DomainLayer.csproj|solutionrelative:domainlayer\\enum\\userstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66CFDF6D-B265-4202-AB29-A973B2BED99A}|DomainLayer\\DomainLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\domainlayer\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66CFDF6D-B265-4202-AB29-A973B2BED99A}|DomainLayer\\DomainLayer.csproj|solutionrelative:domainlayer\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907A19BC-4278-4DB9-8684-E700EEFBC7C6}|InfrastructureLayer\\InfrastructureLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\infrastructurelayer\\infrastructurelayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{907A19BC-4278-4DB9-8684-E700EEFBC7C6}|InfrastructureLayer\\InfrastructureLayer.csproj|solutionrelative:infrastructurelayer\\infrastructurelayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66CFDF6D-B265-4202-AB29-A973B2BED99A}|DomainLayer\\DomainLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\domainlayer\\constants\\jwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66CFDF6D-B265-4202-AB29-A973B2BED99A}|DomainLayer\\DomainLayer.csproj|solutionrelative:domainlayer\\constants\\jwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66CFDF6D-B265-4202-AB29-A973B2BED99A}|DomainLayer\\DomainLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\domainlayer\\constants\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66CFDF6D-B265-4202-AB29-A973B2BED99A}|DomainLayer\\DomainLayer.csproj|solutionrelative:domainlayer\\constants\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66CFDF6D-B265-4202-AB29-A973B2BED99A}|DomainLayer\\DomainLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\domainlayer\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66CFDF6D-B265-4202-AB29-A973B2BED99A}|DomainLayer\\DomainLayer.csproj|solutionrelative:domainlayer\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907A19BC-4278-4DB9-8684-E700EEFBC7C6}|InfrastructureLayer\\InfrastructureLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\infrastructurelayer\\repository\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907A19BC-4278-4DB9-8684-E700EEFBC7C6}|InfrastructureLayer\\InfrastructureLayer.csproj|solutionrelative:infrastructurelayer\\repository\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907A19BC-4278-4DB9-8684-E700EEFBC7C6}|InfrastructureLayer\\InfrastructureLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\infrastructurelayer\\migrations\\labdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907A19BC-4278-4DB9-8684-E700EEFBC7C6}|InfrastructureLayer\\InfrastructureLayer.csproj|solutionrelative:infrastructurelayer\\migrations\\labdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66CFDF6D-B265-4202-AB29-A973B2BED99A}|DomainLayer\\DomainLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\domainlayer\\entities\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66CFDF6D-B265-4202-AB29-A973B2BED99A}|DomainLayer\\DomainLayer.csproj|solutionrelative:domainlayer\\entities\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907A19BC-4278-4DB9-8684-E700EEFBC7C6}|InfrastructureLayer\\InfrastructureLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\infrastructurelayer\\data\\labcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907A19BC-4278-4DB9-8684-E700EEFBC7C6}|InfrastructureLayer\\InfrastructureLayer.csproj|solutionrelative:infrastructurelayer\\data\\labcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907A19BC-4278-4DB9-8684-E700EEFBC7C6}|InfrastructureLayer\\InfrastructureLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\infrastructurelayer\\library.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{907A19BC-4278-4DB9-8684-E700EEFBC7C6}|InfrastructureLayer\\InfrastructureLayer.csproj|solutionrelative:infrastructurelayer\\library.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66CFDF6D-B265-4202-AB29-A973B2BED99A}|DomainLayer\\DomainLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\domainlayer\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66CFDF6D-B265-4202-AB29-A973B2BED99A}|DomainLayer\\DomainLayer.csproj|solutionrelative:domainlayer\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|e:\\fpt\\k\u00EC 7\\swd392\\swd392-fptu-lab-events\\be\\fptu lab events\\controllerlayer\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7281646F-EBC6-4DB0-A820-8660F76A29CA}|ControllerLayer\\ControllerLayer.csproj|solutionrelative:controllerlayer\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": ".gitignore",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\.gitignore",
+              "RelativeDocumentMoniker": "ControllerLayer\\.gitignore",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\.gitignore",
+              "RelativeToolTip": "ControllerLayer\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-28T03:58:43.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "ControllerLayer\\appsettings.Development.json",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\appsettings.Development.json",
+              "RelativeToolTip": "ControllerLayer\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-22T15:44:21.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Core\\JWT\\JwtService.cs",
+              "RelativeDocumentMoniker": "InfrastructureLayer\\Core\\JWT\\JwtService.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Core\\JWT\\JwtService.cs",
+              "RelativeToolTip": "InfrastructureLayer\\Core\\JWT\\JwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T14:30:39.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Mail.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Core\\Mail\\Mail.cs",
+              "RelativeDocumentMoniker": "InfrastructureLayer\\Core\\Mail\\Mail.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Core\\Mail\\Mail.cs",
+              "RelativeToolTip": "InfrastructureLayer\\Core\\Mail\\Mail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T14:30:45.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Payload.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Core\\JWT\\Payload.cs",
+              "RelativeDocumentMoniker": "InfrastructureLayer\\Core\\JWT\\Payload.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Core\\JWT\\Payload.cs",
+              "RelativeToolTip": "InfrastructureLayer\\Core\\JWT\\Payload.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T14:30:38.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DomainLayer.csproj",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\DomainLayer.csproj",
+              "RelativeDocumentMoniker": "DomainLayer\\DomainLayer.csproj",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\DomainLayer.csproj",
+              "RelativeToolTip": "DomainLayer\\DomainLayer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-18T03:49:47.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\appsettings.json",
+              "RelativeDocumentMoniker": "ControllerLayer\\appsettings.json",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\appsettings.json",
+              "RelativeToolTip": "ControllerLayer\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-18T06:09:44.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\Program.cs",
+              "RelativeDocumentMoniker": "ControllerLayer\\Program.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\Program.cs",
+              "RelativeToolTip": "ControllerLayer\\Program.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAApwIYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T03:51:08.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ControllerLayer.csproj",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\ControllerLayer.csproj",
+              "RelativeDocumentMoniker": "ControllerLayer\\ControllerLayer.csproj",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\ControllerLayer.csproj",
+              "RelativeToolTip": "ControllerLayer\\ControllerLayer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-18T03:51:07.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": ".env",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\.env",
+              "RelativeDocumentMoniker": "ControllerLayer\\.env",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\.env",
+              "RelativeToolTip": "ControllerLayer\\.env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-23T03:27:40.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "ControllerLayer\\Controllers\\UsersController.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "ControllerLayer\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T18:22:10.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ControllerLayer\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ControllerLayer\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAAwJ8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T17:44:37.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IAuth.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ApplicationLayer\\Services\\Auth\\IAuth.cs",
+              "RelativeDocumentMoniker": "ApplicationLayer\\Services\\Auth\\IAuth.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ApplicationLayer\\Services\\Auth\\IAuth.cs",
+              "RelativeToolTip": "ApplicationLayer\\Services\\Auth\\IAuth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T14:49:34.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ApplicationLayer\\Services\\Auth\\AuthService.cs",
+              "RelativeDocumentMoniker": "ApplicationLayer\\Services\\Auth\\AuthService.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ApplicationLayer\\Services\\Auth\\AuthService.cs",
+              "RelativeToolTip": "ApplicationLayer\\Services\\Auth\\AuthService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T17:21:20.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Mapping.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ApplicationLayer\\Mapping\\Mapping.cs",
+              "RelativeDocumentMoniker": "ApplicationLayer\\Mapping\\Mapping.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ApplicationLayer\\Mapping\\Mapping.cs",
+              "RelativeToolTip": "ApplicationLayer\\Mapping\\Mapping.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T14:42:37.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "InfrastructureLayer.csproj",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\InfrastructureLayer.csproj",
+              "RelativeDocumentMoniker": "InfrastructureLayer\\InfrastructureLayer.csproj",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\InfrastructureLayer.csproj",
+              "RelativeToolTip": "InfrastructureLayer\\InfrastructureLayer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-18T03:49:16.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LabDbContext.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Data\\LabDbContext.cs",
+              "RelativeDocumentMoniker": "InfrastructureLayer\\Data\\LabDbContext.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Data\\LabDbContext.cs",
+              "RelativeToolTip": "InfrastructureLayer\\Data\\LabDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T06:03:36.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Jwt.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Constants\\Jwt.cs",
+              "RelativeDocumentMoniker": "DomainLayer\\Constants\\Jwt.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Constants\\Jwt.cs",
+              "RelativeToolTip": "DomainLayer\\Constants\\Jwt.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T14:30:05.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationLayer.csproj",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ApplicationLayer\\ApplicationLayer.csproj",
+              "RelativeDocumentMoniker": "ApplicationLayer\\ApplicationLayer.csproj",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ApplicationLayer\\ApplicationLayer.csproj",
+              "RelativeToolTip": "ApplicationLayer\\ApplicationLayer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-18T03:50:30.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Users.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Entities\\Users.cs",
+              "RelativeDocumentMoniker": "DomainLayer\\Entities\\Users.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Entities\\Users.cs",
+              "RelativeToolTip": "DomainLayer\\Entities\\Users.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA1wBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T05:45:37.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserStatus.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Enum\\UserStatus.cs",
+              "RelativeDocumentMoniker": "DomainLayer\\Enum\\UserStatus.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Enum\\UserStatus.cs",
+              "RelativeToolTip": "DomainLayer\\Enum\\UserStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T05:58:38.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "General.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Constants\\General.cs",
+              "RelativeDocumentMoniker": "DomainLayer\\Constants\\General.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Constants\\General.cs",
+              "RelativeToolTip": "DomainLayer\\Constants\\General.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T14:30:03.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Constants\\Constants.cs",
+              "RelativeDocumentMoniker": "DomainLayer\\Constants\\Constants.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Constants\\Constants.cs",
+              "RelativeToolTip": "DomainLayer\\Constants\\Constants.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T14:30:00.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Repository\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "InfrastructureLayer\\Repository\\IGenericRepository.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Repository\\IGenericRepository.cs",
+              "RelativeToolTip": "InfrastructureLayer\\Repository\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T14:29:33.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Entities\\Roles.cs",
+              "RelativeDocumentMoniker": "DomainLayer\\Entities\\Roles.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Entities\\Roles.cs",
+              "RelativeToolTip": "DomainLayer\\Entities\\Roles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T05:57:15.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "LabContextFactory.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Data\\LabContextFactory.cs",
+              "RelativeDocumentMoniker": "InfrastructureLayer\\Data\\LabContextFactory.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Data\\LabContextFactory.cs",
+              "RelativeToolTip": "InfrastructureLayer\\Data\\LabContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T06:18:46.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LabDbContextModelSnapshot.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Migrations\\LabDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "InfrastructureLayer\\Migrations\\LabDbContextModelSnapshot.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\Migrations\\LabDbContextModelSnapshot.cs",
+              "RelativeToolTip": "InfrastructureLayer\\Migrations\\LabDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T06:40:01.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "library.txt",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\library.txt",
+              "RelativeDocumentMoniker": "InfrastructureLayer\\library.txt",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\InfrastructureLayer\\library.txt",
+              "RelativeToolTip": "InfrastructureLayer\\library.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-09-18T05:43:47.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Entities\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "DomainLayer\\Entities\\BaseEntity.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\DomainLayer\\Entities\\BaseEntity.cs",
+              "RelativeToolTip": "DomainLayer\\Entities\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T05:46:16.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "ControllerLayer\\WeatherForecast.cs",
+              "ToolTip": "E:\\FPT\\K\u00EC 7\\SWD392\\SWD392-FPTU-Lab-Events\\BE\\FPTU Lab Events\\ControllerLayer\\WeatherForecast.cs",
+              "RelativeToolTip": "ControllerLayer\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T03:51:10.269Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

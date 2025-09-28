@@ -1,0 +1,346 @@
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\appsettings.Development.json
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\appsettings.json
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ControllerLayer.staticwebassets.endpoints.json
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ControllerLayer.exe
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ControllerLayer.deps.json
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ControllerLayer.runtimeconfig.json
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ControllerLayer.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ControllerLayer.pdb
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.csproj.AssemblyReference.cache
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\rpswa.dswa.cache.json
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.AssemblyInfoInputs.cache
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.AssemblyInfo.cs
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.csproj.CoreCompileInputs.cache
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.MvcApplicationPartsAssemblyInfo.cs
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.MvcApplicationPartsAssemblyInfo.cache
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.sourcelink.json
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\rjimswa.dswa.cache.json
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\scopedcss\bundle\ControllerLayer.styles.css
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\staticwebassets.build.json
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\staticwebassets.build.json.cache
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\staticwebassets.development.json
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\Controll.584DE69A.Up2Date
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\refint\ControllerLayer.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.pdb
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.genruntimeconfig.cache
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ref\ControllerLayer.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Logging.Configuration.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Logging.Console.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Npgsql.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Data.SqlClient.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.IO.Pipelines.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Text.Json.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ApplicationLayer.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\DomainLayer.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\InfrastructureLayer.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ApplicationLayer.pdb
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\DomainLayer.pdb
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\InfrastructureLayer.pdb
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Humanizer.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.CodeDom.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Composition.Convention.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Composition.Hosting.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Composition.Runtime.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Composition.TypedParts.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\PRN222\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.csproj.AssemblyReference.cache
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\rpswa.dswa.cache.json
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.AssemblyInfoInputs.cache
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.AssemblyInfo.cs
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.csproj.CoreCompileInputs.cache
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.MvcApplicationPartsAssemblyInfo.cache
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.sourcelink.json
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\refint\ControllerLayer.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.pdb
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\appsettings.json
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\appsettings.Development.json
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ControllerLayer.staticwebassets.endpoints.json
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ControllerLayer.exe
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ControllerLayer.deps.json
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ControllerLayer.runtimeconfig.json
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ControllerLayer.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ControllerLayer.pdb
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\AutoMapper.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\AutoWrapper.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\BCrypt.Net-Next.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Google.Apis.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Google.Apis.Auth.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Google.Apis.Core.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Humanizer.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\MailKit.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Logging.Configuration.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Logging.Console.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\MimeKit.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Npgsql.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.CodeDom.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Composition.Convention.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Composition.Hosting.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Composition.Runtime.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Composition.TypedParts.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Data.SqlClient.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.IO.Pipelines.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Management.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\System.Text.Json.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ApplicationLayer.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\DomainLayer.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\InfrastructureLayer.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ApplicationLayer.pdb
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\DomainLayer.pdb
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\InfrastructureLayer.pdb
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.MvcApplicationPartsAssemblyInfo.cs
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\rjimswa.dswa.cache.json
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\scopedcss\bundle\ControllerLayer.styles.css
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\staticwebassets.build.json
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\staticwebassets.build.json.cache
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\staticwebassets.development.json
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\Controll.584DE69A.Up2Date
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.genruntimeconfig.cache
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ref\ControllerLayer.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\DotNetEnv.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\Sprache.dll
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\ControllerLayer.xml
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\bin\Debug\net8.0\ControllerLayer.xml
+E:\FPT\Kì 7\SWD392\SWD392-FPTU-Lab-Events\BE\FPTU Lab Events\ControllerLayer\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
