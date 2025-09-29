@@ -1,313 +1,513 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
-import '../../domain/models/lab.dart';
-import '../../domain/models/event.dart';
-import '../../data/repositories/lab_repository.dart';
-import '../../data/repositories/event_repository.dart';
-import '../../core/utils/result.dart';
 
-class LabDetailScreen extends ConsumerStatefulWidget {
+class LabDetailScreen extends StatelessWidget {
   final String labId;
-
-  const LabDetailScreen({
-    super.key,
-    required this.labId,
-  });
-
-  @override
-  ConsumerState<LabDetailScreen> createState() => _LabDetailScreenState();
-}
-
-class _LabDetailScreenState extends ConsumerState<LabDetailScreen> {
-  Lab? _lab;
-  List<Event> _events = [];
-  bool _isLoading = true;
-
-  @override
-  void initState() {
-    super.initState();
-    _loadLabDetails();
-  }
-
-  Future<void> _loadLabDetails() async {
-    final labRepository = LabRepository();
-    final eventRepository = EventRepository();
-    
-    await labRepository.init();
-    await eventRepository.init();
-    
-    // Load lab details
-    final labResult = await labRepository.getLabById(widget.labId);
-    if (labResult.isSuccess) {
-      setState(() {
-        _lab = labResult.data;
-      });
-    }
-    
-    // Load events for this lab
-    final eventsResult = await eventRepository.getEventsForLab(widget.labId);
-    if (eventsResult.isSuccess) {
-      setState(() {
-        _events = eventsResult.data!;
-        _isLoading = false;
-      });
-    } else {
-      setState(() {
-        _isLoading = false;
-      });
-    }
-  }
+  
+  const LabDetailScreen({super.key, required this.labId});
 
   @override
   Widget build(BuildContext context) {
-    if (_isLoading) {
-      return const Scaffold(
-        body: Center(
-          child: CircularProgressIndicator(),
-        ),
-      );
-    }
-
-    if (_lab == null) {
-      return Scaffold(
-        appBar: AppBar(
-          title: const Text('Lab Details'),
-        ),
-        body: const Center(
-          child: Text('Lab not found'),
-        ),
-      );
-    }
-
     return Scaffold(
+      backgroundColor: const Color(0xFFF8FAFC),
       appBar: AppBar(
-        title: Text(_lab!.name),
-        actions: [
-          IconButton(
-            onPressed: () {
-              context.pushNamed(
-                'booking-form',
-                extra: {
-                  'labId': _lab!.id,
-                  'selectedDate': DateTime.now(),
-                },
-              );
-            },
-            icon: const Icon(Icons.add),
-            tooltip: 'Book Lab',
+        backgroundColor: Colors.white,
+        elevation: 0,
+        title: Row(
+          children: [
+            const Text(
+              'Computer Lab A',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w700,
+                color: Color(0xFF1E293B),
+              ),
+            ),
+            const SizedBox(width: 12),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: const Color(0xFF10B981),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: const Text(
+                'Available',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 12,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+          ],
+        ),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(
+            Icons.arrow_back,
+            color: Color(0xFF1E293B),
           ),
-        ],
+        ),
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Lab info card
-            Card(
-              child: Padding(
-                padding: const EdgeInsets.all(16),
+            // Lab Image
+            Container(
+              width: double.infinity,
+              height: 200,
+              margin: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(12),
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    const Color(0xFF1A73E8).withOpacity(0.8),
+                    const Color(0xFFFF6600).withOpacity(0.6),
+                  ],
+                ),
+              ),
+              child: const Center(
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Row(
-                      children: [
-                        Container(
-                          width: 48,
-                          height: 48,
-                          decoration: BoxDecoration(
-                            color: Theme.of(context).colorScheme.primaryContainer,
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: Icon(
-                            Icons.science,
-                            color: Theme.of(context).colorScheme.onPrimaryContainer,
-                            size: 24,
-                          ),
-                        ),
-                        const SizedBox(width: 16),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                _lab!.name,
-                                style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              const SizedBox(height: 4),
-                              Text(
-                                _lab!.location,
-                                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                  color: Theme.of(context).colorScheme.onSurfaceVariant,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
+                    Icon(
+                      Icons.computer,
+                      size: 60,
+                      color: Colors.white,
                     ),
-                    const SizedBox(height: 16),
-                    
-                    // Lab details
-                    _buildInfoRow(
-                      Icons.people,
-                      'Capacity',
-                      '${_lab!.capacity} people',
-                    ),
-                    const SizedBox(height: 8),
-                    _buildInfoRow(
-                      Icons.description,
-                      'Description',
-                      _lab!.description,
+                    SizedBox(height: 8),
+                    Text(
+                      'Computer Lab A',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.white,
+                      ),
                     ),
                   ],
                 ),
               ),
             ),
             
-            const SizedBox(height: 24),
-            
-            // Schedule section
-            Text(
-              'Schedule',
-              style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                fontWeight: FontWeight.bold,
+            // Lab Information
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(12),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.05),
+                    blurRadius: 8,
+                    offset: const Offset(0, 2),
+                  ),
+                ],
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Lab Information',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF1E293B),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  
+                  Row(
+                    children: [
+                      const Icon(
+                        Icons.location_on,
+                        size: 20,
+                        color: Color(0xFF64748B),
+                      ),
+                      const SizedBox(width: 8),
+                      const Text(
+                        'Building A, Floor 2, Room 205',
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Color(0xFF64748B),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 12),
+                  
+                  Row(
+                    children: [
+                      const Icon(
+                        Icons.people,
+                        size: 20,
+                        color: Color(0xFF64748B),
+                      ),
+                      const SizedBox(width: 8),
+                      const Text(
+                        'Capacity: 30 people',
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Color(0xFF64748B),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 16),
+                  
+                  const Text(
+                    'State-of-the-art computer laboratory equipped with high-performance workstations, perfect for software development, programming courses, and technical workshops. The lab features modern computers with the latest development tools and software.',
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Color(0xFF64748B),
+                      height: 1.5,
+                    ),
+                  ),
+                ],
               ),
             ),
             const SizedBox(height: 16),
             
-            if (_events.isEmpty)
-              Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(32),
-                  child: Center(
-                    child: Column(
-                      children: [
-                        Icon(
-                          Icons.event_available,
-                          size: 48,
-                          color: Theme.of(context).colorScheme.onSurfaceVariant,
-                        ),
-                        const SizedBox(height: 16),
-                        Text(
-                          'No events scheduled',
-                          style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                            color: Theme.of(context).colorScheme.onSurfaceVariant,
-                          ),
-                        ),
-                      ],
+            // Features & Equipment
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(12),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.05),
+                    blurRadius: 8,
+                    offset: const Offset(0, 2),
+                  ),
+                ],
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Features & Equipment',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF1E293B),
                     ),
                   ),
-                ),
-              )
-            else
-              ..._events.map((event) => _buildEventCard(event)),
+                  const SizedBox(height: 16),
+                  
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: [
+                      _buildFeatureChip('30 High-performance PCs', const Color(0xFF1A73E8)),
+                      _buildFeatureChip('High-speed WiFi (1Gbps)', const Color(0xFF1A73E8)),
+                      _buildFeatureChip('4K Projector & Screen', const Color(0xFF1A73E8)),
+                      _buildFeatureChip('Interactive Whiteboard', const Color(0xFF1A73E8)),
+                      _buildFeatureChip('Air Conditioning', const Color(0xFF1A73E8)),
+                      _buildFeatureChip('Security Cameras', const Color(0xFF1A73E8)),
+                      _buildFeatureChip('Emergency Equipment', const Color(0xFF1A73E8)),
+                      _buildFeatureChip('Power Outlets at Each Desk', const Color(0xFF1A73E8)),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 16),
+            
+            // Technical Specifications
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(12),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.05),
+                    blurRadius: 8,
+                    offset: const Offset(0, 2),
+                  ),
+                ],
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Technical Specifications',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF1E293B),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  
+                  _buildSpecRow('Operating System:', 'Windows 11 Pro / Ubuntu 22.04'),
+                  _buildSpecRow('Processor:', 'Intel Core i7-12700K'),
+                  _buildSpecRow('Memory:', '32GB DDR4'),
+                  _buildSpecRow('Storage:', '1TB NVMe SSD'),
+                  _buildSpecRow('Graphics:', 'NVIDIA RTX 3060'),
+                  _buildSpecRow('Software:', 'Visual Studio, IntelliJ IDEA, Docker, Git'),
+                ],
+              ),
+            ),
+            const SizedBox(height: 16),
+            
+            // Today's Schedule
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(12),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.05),
+                    blurRadius: 8,
+                    offset: const Offset(0, 2),
+                  ),
+                ],
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Today\'s Schedule',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF1E293B),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  
+                  _buildScheduleItem(
+                    '8:00 AM - 10:00 AM',
+                    'Available',
+                    const Color(0xFF10B981),
+                  ),
+                  _buildScheduleItem(
+                    '10:00 AM - 12:00 PM',
+                    'Machine Learning Workshop',
+                    const Color(0xFFEF4444),
+                  ),
+                  _buildScheduleItem(
+                    '12:00 PM - 2:00 PM',
+                    'Lunch Break',
+                    const Color(0xFFF59E0B),
+                  ),
+                  _buildScheduleItem(
+                    '2:00 PM - 4:00 PM',
+                    'Available',
+                    const Color(0xFF10B981),
+                  ),
+                  _buildScheduleItem(
+                    '4:00 PM - 6:00 PM',
+                    'Available',
+                    const Color(0xFF10B981),
+                  ),
+                  _buildScheduleItem(
+                    '6:00 PM - 8:00 PM',
+                    'Evening Class',
+                    const Color(0xFFEF4444),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 24),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {
-          context.pushNamed(
-            'booking-form',
-            extra: {
-              'labId': _lab!.id,
-              'selectedDate': DateTime.now(),
-            },
-          );
-        },
-        icon: const Icon(Icons.add),
-        label: const Text('Book Lab'),
-      ),
-    );
-  }
-
-  Widget _buildInfoRow(IconData icon, String label, String value) {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Icon(
-          icon,
-          size: 20,
-          color: Theme.of(context).colorScheme.onSurfaceVariant,
-        ),
-        const SizedBox(width: 12),
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                label,
-                style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                  color: Theme.of(context).colorScheme.onSurfaceVariant,
-                ),
-              ),
-              Text(
-                value,
-                style: Theme.of(context).textTheme.bodyMedium,
-              ),
-            ],
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildEventCard(Event event) {
-    return Card(
-      margin: const EdgeInsets.only(bottom: 8),
-      child: ListTile(
-        leading: CircleAvatar(
-          backgroundColor: Theme.of(context).colorScheme.primaryContainer,
-          child: Icon(
-            Icons.event,
-            color: Theme.of(context).colorScheme.onPrimaryContainer,
-          ),
-        ),
-        title: Text(event.title),
-        subtitle: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(event.description),
-            const SizedBox(height: 4),
-            Row(
-              children: [
-                Icon(
-                  Icons.access_time,
-                  size: 16,
-                  color: Theme.of(context).colorScheme.onSurfaceVariant,
-                ),
-                const SizedBox(width: 4),
-                Text(
-                  '${_formatDateTime(event.start)} - ${_formatDateTime(event.end)}',
-                  style: Theme.of(context).textTheme.bodySmall,
-                ),
-              ],
+      bottomNavigationBar: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.05),
+              blurRadius: 8,
+              offset: const Offset(0, -2),
             ),
           ],
         ),
-        trailing: FilledButton(
-          onPressed: () {
-            context.pushNamed(
-              'booking-form',
-              extra: {
-                'eventId': event.id,
-                'labId': event.labId,
-                'selectedDate': event.start,
-                'selectedStartTime': event.start,
-                'selectedEndTime': event.end,
-              },
-            );
-          },
-          child: const Text('Join'),
+        child: SizedBox(
+          width: double.infinity,
+          child: ElevatedButton(
+            onPressed: () {
+              // Navigate to booking form
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color(0xFFFF6600),
+              foregroundColor: Colors.white,
+              padding: const EdgeInsets.symmetric(vertical: 16),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+            child: const Text(
+              'Book This Lab',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
         ),
       ),
     );
   }
 
-  String _formatDateTime(DateTime dateTime) {
-    return '${dateTime.day}/${dateTime.month} ${dateTime.hour.toString().padLeft(2, '0')}:${dateTime.minute.toString().padLeft(2, '0')}';
+  Widget _buildFeatureChip(String text, Color color) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+      decoration: BoxDecoration(
+        color: color,
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Text(
+        text,
+        style: const TextStyle(
+          color: Colors.white,
+          fontSize: 12,
+          fontWeight: FontWeight.w500,
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSpecRow(String label, String value) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox(
+            width: 120,
+            child: Text(
+              label,
+              style: const TextStyle(
+                fontSize: 14,
+                color: Color(0xFF64748B),
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+          Expanded(
+            child: Text(
+              value,
+              style: const TextStyle(
+                fontSize: 14,
+                color: Color(0xFF1E293B),
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildScheduleItem(String time, String title, Color color) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 12),
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: color.withOpacity(0.1),
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(
+          color: color.withOpacity(0.3),
+          width: 1,
+        ),
+      ),
+      child: Row(
+        children: [
+          Container(
+            width: 8,
+            height: 8,
+            decoration: BoxDecoration(
+              color: color,
+              shape: BoxShape.circle,
+            ),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  time,
+                  style: const TextStyle(
+                    fontSize: 12,
+                    color: Color(0xFF64748B),
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                Text(
+                  title,
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: color,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          if (title == 'Available')
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: color,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: const Text(
+                'Available',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 10,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            )
+          else if (title != 'Lunch Break')
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: color,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Text(
+                title == 'Machine Learning Workshop' ? 'Booked' : 'Break',
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 10,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            )
+          else
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: color,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: const Text(
+                'Break',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 10,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+        ],
+      ),
+    );
   }
 }

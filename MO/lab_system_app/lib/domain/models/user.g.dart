@@ -20,7 +20,7 @@ class UserAdapter extends TypeAdapter<User> {
       id: fields[0] as String,
       name: fields[1] as String,
       studentId: fields[2] as String?,
-      role: fields[3] as UserRole,
+      role: fields[3] as Role,
       createdAt: fields[4] as DateTime,
     );
   }

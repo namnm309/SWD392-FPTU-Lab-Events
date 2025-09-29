@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../domain/enums/role.dart';
-import '../../core/theme/app_theme.dart';
-import '../../core/utils/result.dart';
 import 'auth_controller.dart';
 
 class LoginScreen extends ConsumerStatefulWidget {
@@ -17,17 +15,15 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
   final _nameController = TextEditingController();
   final _studentIdController = TextEditingController();
-  UserRole _selectedRole = UserRole.student;
+  Role _selectedRole = Role.student;
+  bool _isLoading = false;
 
-  @override
-  void dispose() {
-    _nameController.dispose();
-    _studentIdController.dispose();
-    super.dispose();
-  }
-
-  Future<void> _login() async {
+  Future<void> _handleLogin() async {
     if (!_formKey.currentState!.validate()) return;
+
+    setState(() {
+      _isLoading = true;
+    });
 
     final authController = ref.read(authControllerProvider.notifier);
     
@@ -39,15 +35,16 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
       role: _selectedRole,
     );
 
+    setState(() {
+      _isLoading = false;
+    });
+
     if (result.isSuccess) {
       if (mounted) {
-        print('Login successful, navigating to home...');
-        // Use pushReplacementNamed to ensure proper navigation
-        context.pushReplacementNamed('home');
+        context.go('/home');
       }
     } else {
       if (mounted) {
-        print('Login failed: ${result.error}');
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(result.error!),
@@ -60,115 +57,291 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    
     return Scaffold(
+      backgroundColor: const Color(0xFFF8FAFC),
       appBar: AppBar(
-        title: const Text('FPT Lab System'),
-        backgroundColor: theme.colorScheme.surface,
+        backgroundColor: Colors.transparent,
         elevation: 0,
+        leading: IconButton(
+          onPressed: () {
+            context.go('/');
+          },
+          icon: const Icon(
+            Icons.arrow_back,
+            color: Color(0xFF1E293B),
+          ),
+        ),
+        title: const Text(
+          'Login',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.w700,
+            color: Color(0xFF1E293B),
+          ),
+        ),
+        centerTitle: true,
       ),
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(24.0),
+          padding: const EdgeInsets.all(24),
           child: Form(
             key: _formKey,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Icon(
-                  Icons.science,
-                  size: 80,
-                  color: theme.colorScheme.primary,
+                const SizedBox(height: 20),
+                
+                // Select your role
+                const Text(
+                  'Select your role',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                    color: Color(0xFF1E293B),
+                  ),
                 ),
+                const SizedBox(height: 16),
+                
+                // Role Selection
+                Column(
+                  children: [
+                    // Student
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(
+                          color: _selectedRole == Role.student 
+                              ? const Color(0xFFFF6600) 
+                              : const Color(0xFFE2E8F0),
+                          width: 2,
+                        ),
+                      ),
+                      child: RadioListTile<Role>(
+                        title: const Text(
+                          'Student',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: Color(0xFF1E293B),
+                          ),
+                        ),
+                        value: Role.student,
+                        groupValue: _selectedRole,
+                        onChanged: (Role? value) {
+                          setState(() {
+                            _selectedRole = value!;
+                          });
+                        },
+                        activeColor: const Color(0xFFFF6600),
+                        contentPadding: const EdgeInsets.symmetric(horizontal: 16),
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    
+                    // Lab Manager
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(
+                          color: _selectedRole == Role.labManager 
+                              ? const Color(0xFFFF6600) 
+                              : const Color(0xFFE2E8F0),
+                          width: 2,
+                        ),
+                      ),
+                      child: RadioListTile<Role>(
+                        title: const Text(
+                          'Lab Manager',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: Color(0xFF1E293B),
+                          ),
+                        ),
+                        value: Role.labManager,
+                        groupValue: _selectedRole,
+                        onChanged: (Role? value) {
+                          setState(() {
+                            _selectedRole = value!;
+                          });
+                        },
+                        activeColor: const Color(0xFFFF6600),
+                        contentPadding: const EdgeInsets.symmetric(horizontal: 16),
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    
+                    // Admin
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(
+                          color: _selectedRole == Role.admin 
+                              ? const Color(0xFFFF6600) 
+                              : const Color(0xFFE2E8F0),
+                          width: 2,
+                        ),
+                      ),
+                      child: RadioListTile<Role>(
+                        title: const Text(
+                          'Admin',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: Color(0xFF1E293B),
+                          ),
+                        ),
+                        value: Role.admin,
+                        groupValue: _selectedRole,
+                        onChanged: (Role? value) {
+                          setState(() {
+                            _selectedRole = value!;
+                          });
+                        },
+                        activeColor: const Color(0xFFFF6600),
+                        contentPadding: const EdgeInsets.symmetric(horizontal: 16),
+                      ),
+                    ),
+                  ],
+                ),
+                
                 const SizedBox(height: 32),
-                Text(
-                  'Welcome to FPT Lab System',
-                  style: theme.textTheme.headlineMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 8),
-                Text(
-                  'Please login to continue',
-                  style: theme.textTheme.bodyLarge?.copyWith(
-                    color: theme.colorScheme.onSurfaceVariant,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 48),
                 
                 // Name field
+                const Text(
+                  'Name',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                    color: Color(0xFF1E293B),
+                  ),
+                ),
+                const SizedBox(height: 8),
                 TextFormField(
                   controller: _nameController,
                   decoration: const InputDecoration(
-                    labelText: 'Name',
-                    prefixIcon: Icon(Icons.person),
+                    hintText: 'Enter your name',
+                    hintStyle: TextStyle(
+                      color: Color(0xFF64748B),
+                    ),
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide(color: Color(0xFFE2E8F0)),
+                      borderRadius: BorderRadius.all(Radius.circular(8)),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Color(0xFFE2E8F0)),
+                      borderRadius: BorderRadius.all(Radius.circular(8)),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Color(0xFFFF6600)),
+                      borderRadius: BorderRadius.all(Radius.circular(8)),
+                    ),
+                    filled: true,
+                    fillColor: Colors.white,
                   ),
                   validator: (value) {
                     if (value == null || value.trim().isEmpty) {
-                      return 'Name is required';
+                      return 'Please enter your name';
                     }
                     return null;
                   },
                 ),
-                const SizedBox(height: 16),
                 
-                // Student ID field (optional)
+                const SizedBox(height: 24),
+                
+                // Student ID field
+                const Text(
+                  'Student ID',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                    color: Color(0xFF1E293B),
+                  ),
+                ),
+                const SizedBox(height: 8),
                 TextFormField(
                   controller: _studentIdController,
                   decoration: const InputDecoration(
-                    labelText: 'Student ID (Optional)',
-                    prefixIcon: Icon(Icons.badge),
+                    hintText: 'Enter your student ID',
+                    hintStyle: TextStyle(
+                      color: Color(0xFF64748B),
+                    ),
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide(color: Color(0xFFE2E8F0)),
+                      borderRadius: BorderRadius.all(Radius.circular(8)),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Color(0xFFE2E8F0)),
+                      borderRadius: BorderRadius.all(Radius.circular(8)),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Color(0xFFFF6600)),
+                      borderRadius: BorderRadius.all(Radius.circular(8)),
+                    ),
+                    filled: true,
+                    fillColor: Colors.white,
                   ),
-                ),
-                const SizedBox(height: 16),
-                
-                // Role selection
-                Text(
-                  'Select Role',
-                  style: theme.textTheme.titleMedium,
-                ),
-                const SizedBox(height: 8),
-                SegmentedButton<UserRole>(
-                  segments: const [
-                    ButtonSegment<UserRole>(
-                      value: UserRole.student,
-                      label: Text('Student'),
-                      icon: Icon(Icons.school),
-                    ),
-                    ButtonSegment<UserRole>(
-                      value: UserRole.labManager,
-                      label: Text('Lab Manager'),
-                      icon: Icon(Icons.manage_accounts),
-                    ),
-                    ButtonSegment<UserRole>(
-                      value: UserRole.admin,
-                      label: Text('Admin'),
-                      icon: Icon(Icons.admin_panel_settings),
-                    ),
-                  ],
-                  selected: {_selectedRole},
-                  onSelectionChanged: (Set<UserRole> selection) {
-                    setState(() {
-                      _selectedRole = selection.first;
-                    });
+                  validator: (value) {
+                    if (_selectedRole == Role.student && (value == null || value.trim().isEmpty)) {
+                      return 'Please enter your student ID';
+                    }
+                    return null;
                   },
                 ),
-                const SizedBox(height: 32),
                 
-                // Login button
-                FilledButton(
-                  onPressed: _login,
-                  child: const Text('Login'),
+                const Spacer(),
+                
+                // Login Button
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: _isLoading ? null : _handleLogin,
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xFFFF6600),
+                      foregroundColor: Colors.white,
+                      disabledBackgroundColor: const Color(0xFFE2E8F0),
+                      disabledForegroundColor: const Color(0xFF64748B),
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      elevation: 0,
+                    ),
+                    child: _isLoading
+                        ? const SizedBox(
+                            width: 20,
+                            height: 20,
+                            child: CircularProgressIndicator(
+                              color: Colors.white,
+                              strokeWidth: 2,
+                            ),
+                          )
+                        : const Text(
+                            'Log In',
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                  ),
                 ),
+                
+                const SizedBox(height: 20),
               ],
             ),
           ),
         ),
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    _nameController.dispose();
+    _studentIdController.dispose();
+    super.dispose();
   }
 }

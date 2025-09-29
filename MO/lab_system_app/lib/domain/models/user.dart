@@ -15,7 +15,7 @@ class User extends HiveObject {
   final String? studentId;
 
   @HiveField(3)
-  final UserRole role;
+  final Role role;
 
   @HiveField(4)
   final DateTime createdAt;
@@ -32,7 +32,7 @@ class User extends HiveObject {
     String? id,
     String? name,
     String? studentId,
-    UserRole? role,
+    Role? role,
     DateTime? createdAt,
   }) {
     return User(

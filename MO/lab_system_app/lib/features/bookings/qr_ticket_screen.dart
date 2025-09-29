@@ -1,204 +1,320 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:qr_flutter/qr_flutter.dart';
-import 'package:go_router/go_router.dart';
-import '../../domain/models/booking.dart';
-import '../../data/repositories/booking_repository.dart';
-import '../../core/utils/result.dart';
 
-class QRTicketScreen extends ConsumerStatefulWidget {
+class QRTicketScreen extends StatelessWidget {
   final String bookingId;
-
-  const QRTicketScreen({
-    super.key,
-    required this.bookingId,
-  });
-
-  @override
-  ConsumerState<QRTicketScreen> createState() => _QRTicketScreenState();
-}
-
-class _QRTicketScreenState extends ConsumerState<QRTicketScreen> {
-  Booking? _booking;
-  bool _isLoading = true;
-
-  @override
-  void initState() {
-    super.initState();
-    _loadBooking();
-  }
-
-  Future<void> _loadBooking() async {
-    final bookingRepository = BookingRepository();
-    await bookingRepository.init();
-    
-    final result = await bookingRepository.getBookingById(widget.bookingId);
-    if (result.isSuccess) {
-      setState(() {
-        _booking = result.data;
-        _isLoading = false;
-      });
-    } else {
-      setState(() {
-        _isLoading = false;
-      });
-    }
-  }
+  
+  const QRTicketScreen({super.key, required this.bookingId});
 
   @override
   Widget build(BuildContext context) {
-    if (_isLoading) {
-      return const Scaffold(
-        body: Center(
-          child: CircularProgressIndicator(),
-        ),
-      );
-    }
-
-    if (_booking == null) {
-      return Scaffold(
-        appBar: AppBar(
-          title: const Text('QR Ticket'),
-        ),
-        body: const Center(
-          child: Text('Booking not found'),
-        ),
-      );
-    }
-
     return Scaffold(
+      backgroundColor: const Color(0xFFF8FAFC),
       appBar: AppBar(
-        title: const Text('QR Ticket'),
-        actions: [
-          IconButton(
-            onPressed: () {
-              // TODO: Implement share functionality
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Share functionality coming soon')),
-              );
-            },
-            icon: const Icon(Icons.share),
+        backgroundColor: Colors.white,
+        elevation: 0,
+        title: Row(
+          children: [
+            const Text(
+              'QR Ticket',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w700,
+                color: Color(0xFF1E293B),
+              ),
+            ),
+            const SizedBox(width: 12),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: const Color(0xFF10B981),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: const Text(
+                'Confirmed',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 12,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+          ],
+        ),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(
+            Icons.arrow_back,
+            color: Color(0xFF1E293B),
           ),
-        ],
+        ),
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(24),
+        padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            // QR Code
-            Card(
-              child: Padding(
-                padding: const EdgeInsets.all(24),
-                child: Column(
-                  children: [
-                    Text(
-                      'Booking QR Code',
-                      style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(height: 16),
-                    Container(
-                      padding: const EdgeInsets.all(16),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(12),
-                        border: Border.all(color: Colors.grey.shade300),
-                      ),
-                      child: QrImageView(
-                        data: _generateQRData(),
-                        version: QrVersions.auto,
-                        size: 200.0,
-                        backgroundColor: Colors.white,
-                      ),
-                    ),
-                    const SizedBox(height: 16),
-                    Text(
-                      'Scan this QR code to verify your booking',
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: Theme.of(context).colorScheme.onSurfaceVariant,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            
-            const SizedBox(height: 24),
-            
-            // Booking details
-            Card(
-              child: Padding(
-                padding: const EdgeInsets.all(16),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Booking Details',
-                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(height: 16),
-                    
-                    _buildDetailRow(
-                      Icons.title,
-                      'Title',
-                      _booking!.title,
-                    ),
-                    const SizedBox(height: 12),
-                    _buildDetailRow(
-                      Icons.calendar_today,
-                      'Date',
-                      _formatDate(_booking!.date),
-                    ),
-                    const SizedBox(height: 12),
-                    _buildDetailRow(
-                      Icons.access_time,
-                      'Time',
-                      '${_formatTime(_booking!.start)} - ${_formatTime(_booking!.end)}',
-                    ),
-                    const SizedBox(height: 12),
-                    _buildDetailRow(
-                      Icons.people,
-                      'Participants',
-                      '${_booking!.participants}',
-                    ),
-                    const SizedBox(height: 12),
-                    _buildDetailRow(
-                      Icons.repeat,
-                      'Repeat',
-                      _booking!.repeatRule.displayName,
-                    ),
-                    
-                    if (_booking!.notes != null && _booking!.notes!.isNotEmpty) ...[
-                      const SizedBox(height: 12),
-                      _buildDetailRow(
-                        Icons.note,
-                        'Notes',
-                        _booking!.notes!,
-                      ),
-                    ],
-                  ],
-                ),
-              ),
-            ),
-            
-            const SizedBox(height: 24),
-            
-            // Scan QR button
-            SizedBox(
+            // QR Code Card
+            Container(
               width: double.infinity,
+              padding: const EdgeInsets.all(24),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(16),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.05),
+                    blurRadius: 10,
+                    offset: const Offset(0, 2),
+                  ),
+                ],
+              ),
+              child: Column(
+                children: [
+                  const Text(
+                    'Lab Access QR Code',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF1E293B),
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  const Text(
+                    'Show this QR code at the lab entrance',
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Color(0xFF64748B),
+                    ),
+                  ),
+                  const SizedBox(height: 24),
+                  
+                  // QR Code
+                  Container(
+                    width: 200,
+                    height: 200,
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(
+                        color: const Color(0xFFE2E8F0),
+                        width: 2,
+                      ),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        // QR Code placeholder - in real app, use qr_flutter package
+                        Container(
+                          width: 120,
+                          height: 120,
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF1E293B),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: const Center(
+                            child: Icon(
+                              Icons.qr_code,
+                              color: Colors.white,
+                              size: 80,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        const Text(
+                          'FPT-LAB - 175913874221',
+                          style: TextStyle(
+                            fontSize: 10,
+                            color: Color(0xFF64748B),
+                            fontFamily: 'monospace',
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 24),
+            
+            // Booking Details
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(12),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.05),
+                    blurRadius: 8,
+                    offset: const Offset(0, 2),
+                  ),
+                ],
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Machine Learning Workshop',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF1E293B),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  
+                  _buildDetailRow(
+                    Icons.access_time,
+                    'Monday, December 23, 2024\n10:00 AM - 12:00 PM',
+                  ),
+                  const SizedBox(height: 12),
+                  
+                  _buildDetailRow(
+                    Icons.location_on,
+                    'Computer Lab A\nBuilding A, Floor 2, Room 205',
+                  ),
+                  const SizedBox(height: 12),
+                  
+                  _buildDetailRow(
+                    Icons.people,
+                    '25 participants',
+                  ),
+                  const SizedBox(height: 12),
+                  
+                  _buildDetailRow(
+                    Icons.person,
+                    'Organized by John Doe',
+                  ),
+                  const SizedBox(height: 16),
+                  
+                  const Divider(color: Color(0xFFE2E8F0)),
+                  const SizedBox(height: 16),
+                  
+                  const Text(
+                    'Booking ID',
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Color(0xFF64748B),
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  const Text(
+                    'FPT-LAB-175913874221',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Color(0xFF1E293B),
+                      fontWeight: FontWeight.w600,
+                      fontFamily: 'monospace',
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 24),
+            
+            // Instructions
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: const Color(0xFFF0F9FF),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(
+                  color: const Color(0xFF0EA5E9),
+                  width: 1,
+                ),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Instructions',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF1E293B),
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  
+                  _buildInstruction('• Arrive 5 minutes before your scheduled time'),
+                  _buildInstruction('• Show this QR code to the lab supervisor'),
+                  _buildInstruction('• Keep your student ID with you'),
+                  _buildInstruction('• Follow lab safety guidelines'),
+                ],
+              ),
+            ),
+            const SizedBox(height: 32),
+          ],
+        ),
+      ),
+      bottomNavigationBar: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.05),
+              blurRadius: 8,
+              offset: const Offset(0, -2),
+            ),
+          ],
+        ),
+        child: Row(
+          children: [
+            Expanded(
               child: OutlinedButton.icon(
                 onPressed: () {
-                  // TODO: Implement QR scanner
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('QR Scanner coming soon')),
-                  );
+                  // Download QR code
                 },
-                icon: const Icon(Icons.qr_code_scanner),
-                label: const Text('Scan QR Code'),
+                icon: const Icon(
+                  Icons.download,
+                  color: Color(0xFF64748B),
+                ),
+                label: const Text(
+                  'Download',
+                  style: TextStyle(
+                    color: Color(0xFF64748B),
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                style: OutlinedButton.styleFrom(
+                  side: const BorderSide(color: Color(0xFFE2E8F0)),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                ),
+              ),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: ElevatedButton.icon(
+                onPressed: () {
+                  // Share QR code
+                },
+                icon: const Icon(
+                  Icons.share,
+                  color: Colors.white,
+                ),
+                label: const Text(
+                  'Share',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFFFF6600),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                ),
               ),
             ),
           ],
@@ -207,47 +323,41 @@ class _QRTicketScreenState extends ConsumerState<QRTicketScreen> {
     );
   }
 
-  Widget _buildDetailRow(IconData icon, String label, String value) {
+  Widget _buildDetailRow(IconData icon, String text) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Icon(
           icon,
           size: 20,
-          color: Theme.of(context).colorScheme.onSurfaceVariant,
+          color: const Color(0xFF64748B),
         ),
         const SizedBox(width: 12),
         Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                label,
-                style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                  color: Theme.of(context).colorScheme.onSurfaceVariant,
-                ),
-              ),
-              Text(
-                value,
-                style: Theme.of(context).textTheme.bodyMedium,
-              ),
-            ],
+          child: Text(
+            text,
+            style: const TextStyle(
+              fontSize: 14,
+              color: Color(0xFF1E293B),
+              height: 1.4,
+            ),
           ),
         ),
       ],
     );
   }
 
-  String _generateQRData() {
-    // Generate QR data with booking ID and user ID
-    return 'BOOKING:${_booking!.id}:${_booking!.userId}';
-  }
-
-  String _formatDate(DateTime date) {
-    return '${date.day}/${date.month}/${date.year}';
-  }
-
-  String _formatTime(DateTime time) {
-    return '${time.hour.toString().padLeft(2, '0')}:${time.minute.toString().padLeft(2, '0')}';
+  Widget _buildInstruction(String text) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 4),
+      child: Text(
+        text,
+        style: const TextStyle(
+          fontSize: 14,
+          color: Color(0xFF0369A1),
+          height: 1.4,
+        ),
+      ),
+    );
   }
 }

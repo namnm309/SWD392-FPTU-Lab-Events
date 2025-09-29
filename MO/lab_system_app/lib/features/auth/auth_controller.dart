@@ -4,12 +4,14 @@ import '../../domain/enums/role.dart';
 import '../../data/repositories/user_repository.dart';
 import '../../core/utils/result.dart';
 
-class AuthController extends StateNotifier<AsyncValue<User?>> {
-  AuthController(this._userRepository) : super(const AsyncValue.loading()) {
+class AuthController extends Notifier<AsyncValue<User?>> {
+  @override
+  AsyncValue<User?> build() {
     _loadCurrentUser();
+    return const AsyncValue.loading();
   }
 
-  final UserRepository _userRepository;
+  UserRepository get _userRepository => ref.read(userRepositoryProvider);
 
   Future<void> _loadCurrentUser() async {
     try {
@@ -31,7 +33,7 @@ class AuthController extends StateNotifier<AsyncValue<User?>> {
   Future<Result<User>> login({
     required String name,
     String? studentId,
-    required UserRole role,
+    required Role role,
   }) async {
     try {
       // Ensure repository is initialized
@@ -82,16 +84,15 @@ class AuthController extends StateNotifier<AsyncValue<User?>> {
 
   bool get isLoggedIn => currentUser != null;
   
-  bool get isAdmin => currentUser?.role == UserRole.admin;
-  
-  bool get isLabManager => currentUser?.role == UserRole.labManager;
-  
-  bool get isStudent => currentUser?.role == UserRole.student;
+  bool get isAdmin => currentUser?.role == Role.admin;
+
+  bool get isLabManager => currentUser?.role == Role.labManager;
+
+  bool get isStudent => currentUser?.role == Role.student;
 }
 
-final authControllerProvider = StateNotifierProvider<AuthController, AsyncValue<User?>>((ref) {
-  final userRepository = UserRepository();
-  return AuthController(userRepository);
+final authControllerProvider = NotifierProvider<AuthController, AsyncValue<User?>>(() {
+  return AuthController();
 });
 
 final currentUserProvider = Provider<User?>((ref) {
@@ -108,10 +109,15 @@ final isLoggedInProvider = Provider<bool>((ref) {
 
 final isAdminProvider = Provider<bool>((ref) {
   final user = ref.watch(currentUserProvider);
-  return user?.role == UserRole.admin;
+  return user?.role == Role.admin;
 });
 
 final isLabManagerProvider = Provider<bool>((ref) {
   final user = ref.watch(currentUserProvider);
-  return user?.role == UserRole.labManager;
+  return user?.role == Role.labManager;
+});
+
+final isStudentProvider = Provider<bool>((ref) {
+  final user = ref.watch(currentUserProvider);
+  return user?.role == Role.student;
 });

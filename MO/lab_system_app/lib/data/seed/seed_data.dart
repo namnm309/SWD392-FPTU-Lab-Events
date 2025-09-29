@@ -131,7 +131,7 @@ class SeedData {
     await userRepository.createUser(
       name: 'Admin User',
       studentId: 'ADMIN001',
-      role: UserRole.admin.name,
+      role: Role.admin.name,
     );
   }
 }

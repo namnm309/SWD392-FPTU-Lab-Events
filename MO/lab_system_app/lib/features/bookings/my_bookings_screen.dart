@@ -71,152 +71,325 @@ class _MyBookingsScreenState extends ConsumerState<MyBookingsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    if (_isLoading) {
-      return const Center(
-        child: CircularProgressIndicator(),
-      );
-    }
-
-    if (_bookings.isEmpty) {
-      return Center(
+    return Scaffold(
+      backgroundColor: const Color(0xFFF8FAFC),
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
+        centerTitle: true,
+        title: const Text(
+          'My Bookings',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.w700,
+            color: Color(0xFF1E293B),
+          ),
+        ),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(
+            Icons.arrow_back,
+            color: Color(0xFF1E293B),
+          ),
+        ),
+      ),
+      body: DefaultTabController(
+        length: 2,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
-              Icons.book_online,
-              size: 64,
-              color: Theme.of(context).colorScheme.onSurfaceVariant,
-            ),
-            const SizedBox(height: 16),
-            Text(
-              'No bookings found',
-              style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                color: Theme.of(context).colorScheme.onSurfaceVariant,
+            Container(
+              color: Colors.white,
+              child: const TabBar(
+                tabs: [
+                  Tab(text: 'Upcoming'),
+                  Tab(text: 'Past'),
+                ],
+                labelColor: Color(0xFF1E293B),
+                unselectedLabelColor: Color(0xFF64748B),
+                indicatorColor: Color(0xFFFF6600),
+                indicatorWeight: 3,
               ),
             ),
-            const SizedBox(height: 8),
-            Text(
-              'Create your first booking from the Labs tab',
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: Theme.of(context).colorScheme.onSurfaceVariant,
+            Expanded(
+              child: TabBarView(
+                children: [
+                  _buildUpcomingBookings(),
+                  _buildPastBookings(),
+                ],
               ),
             ),
           ],
         ),
-      );
-    }
-
-    return ListView.builder(
-      padding: const EdgeInsets.all(16),
-      itemCount: _bookings.length,
-      itemBuilder: (context, index) {
-        final booking = _bookings[index];
-        return _buildBookingCard(booking);
-      },
+      ),
     );
   }
 
-  Widget _buildBookingCard(Booking booking) {
-    final theme = Theme.of(context);
-    final statusColor = _getStatusColor(booking.status, theme);
-    
-    return Card(
-      margin: const EdgeInsets.only(bottom: 8),
-      child: ListTile(
-        leading: CircleAvatar(
-          backgroundColor: statusColor.withOpacity(0.1),
-          child: Icon(
-            _getStatusIcon(booking.status),
-            color: statusColor,
-          ),
+  Widget _buildUpcomingBookings() {
+    return ListView(
+      padding: const EdgeInsets.all(16),
+      children: [
+        _buildBookingCard(
+          'Machine Learning Workshop',
+          'Mon, Dec 23 • 10:00 AM - 12:00 PM',
+          'Computer Lab A • Building A, Floor 2',
+          '25 participants',
+          'Repeats weekly',
+          'Confirmed',
+          const Color(0xFF10B981),
+          showQR: true,
         ),
-        title: Text(booking.title),
-        subtitle: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              '${_formatDate(booking.date)} • ${_formatTime(booking.start)} - ${_formatTime(booking.end)}',
-            ),
+        const SizedBox(height: 16),
+        _buildBookingCard(
+          'Database Design Session',
+          'Tue, Dec 24 • 2:00 PM - 4:00 PM',
+          'Computer Lab B • Building A, Floor 3',
+          '20 participants',
+          '',
+          'Pending',
+          const Color(0xFFF59E0B),
+        ),
+        const SizedBox(height: 16),
+        _buildBookingCard(
+          'Mobile App Development',
+          'Wed, Dec 25 • 9:00 AM - 11:00 AM',
+          'Computer Lab C • Building B, Floor 1',
+          '30 participants',
+          '',
+          'Confirmed',
+          const Color(0xFF10B981),
+          showQR: true,
+        ),
+      ],
+    );
+  }
+
+  Widget _buildPastBookings() {
+    return ListView(
+      padding: const EdgeInsets.all(16),
+      children: [
+        _buildBookingCard(
+          'Web Development Workshop',
+          'Mon, Dec 16 • 2:00 PM - 4:00 PM',
+          'Computer Lab A • Building A, Floor 2',
+          '25 participants',
+          '',
+          'Completed',
+          const Color(0xFF64748B),
+        ),
+        const SizedBox(height: 16),
+        _buildBookingCard(
+          'Python Programming',
+          'Fri, Dec 13 • 10:00 AM - 12:00 PM',
+          'Computer Lab B • Building A, Floor 3',
+          '30 participants',
+          '',
+          'Completed',
+          const Color(0xFF64748B),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildBookingCard(
+    String title,
+    String datetime,
+    String location,
+    String participants,
+    String repeats,
+    String status,
+    Color statusColor, {
+    bool showQR = false,
+  }) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(
+          color: const Color(0xFFFF6600),
+          width: 2,
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            blurRadius: 8,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  title,
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF1E293B),
+                  ),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                decoration: BoxDecoration(
+                  color: statusColor,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Text(
+                  status,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          
+          Row(
+            children: [
+              const Icon(
+                Icons.access_time,
+                size: 16,
+                color: Color(0xFF64748B),
+              ),
+              const SizedBox(width: 4),
+              Text(
+                datetime,
+                style: const TextStyle(
+                  fontSize: 12,
+                  color: Color(0xFF64748B),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 4),
+          
+          Row(
+            children: [
+              const Icon(
+                Icons.location_on,
+                size: 16,
+                color: Color(0xFF64748B),
+              ),
+              const SizedBox(width: 4),
+              Text(
+                location,
+                style: const TextStyle(
+                  fontSize: 12,
+                  color: Color(0xFF64748B),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 4),
+          
+          Row(
+            children: [
+              const Icon(
+                Icons.people,
+                size: 16,
+                color: Color(0xFF64748B),
+              ),
+              const SizedBox(width: 4),
+              Text(
+                participants,
+                style: const TextStyle(
+                  fontSize: 12,
+                  color: Color(0xFF64748B),
+                ),
+              ),
+            ],
+          ),
+          
+          if (repeats.isNotEmpty) ...[
             const SizedBox(height: 4),
             Row(
               children: [
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                  decoration: BoxDecoration(
-                    color: statusColor.withOpacity(0.1),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Text(
-                    booking.status.displayName,
-                    style: TextStyle(
-                      color: statusColor,
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                ),
-                const SizedBox(width: 8),
-                Icon(
-                  Icons.people,
+                const Icon(
+                  Icons.repeat,
                   size: 16,
-                  color: theme.colorScheme.onSurfaceVariant,
+                  color: Color(0xFF64748B),
                 ),
                 const SizedBox(width: 4),
                 Text(
-                  '${booking.participants}',
-                  style: theme.textTheme.bodySmall,
+                  repeats,
+                  style: const TextStyle(
+                    fontSize: 12,
+                    color: Color(0xFF64748B),
+                  ),
                 ),
               ],
             ),
           ],
-        ),
-        trailing: PopupMenuButton<String>(
-          onSelected: (value) async {
-            switch (value) {
-              case 'view':
-                _showBookingDetail(booking);
-                break;
-              case 'qr':
-                context.pushNamed('qr-ticket', pathParameters: {'id': booking.id});
-                break;
-              case 'cancel':
-                if (booking.status == BookingStatus.approved ||
-                    booking.status == BookingStatus.pending) {
-                  _showCancelDialog(booking);
-                }
-                break;
-            }
-          },
-          itemBuilder: (context) => [
-            const PopupMenuItem(
-              value: 'view',
-              child: ListTile(
-                leading: Icon(Icons.visibility),
-                title: Text('View Details'),
-                contentPadding: EdgeInsets.zero,
-              ),
-            ),
-            const PopupMenuItem(
-              value: 'qr',
-              child: ListTile(
-                leading: Icon(Icons.qr_code),
-                title: Text('QR Ticket'),
-                contentPadding: EdgeInsets.zero,
-              ),
-            ),
-            if (booking.status == BookingStatus.approved ||
-                booking.status == BookingStatus.pending)
-              const PopupMenuItem(
-                value: 'cancel',
-                child: ListTile(
-                  leading: Icon(Icons.cancel, color: Colors.red),
-                  title: Text('Cancel', style: TextStyle(color: Colors.red)),
-                  contentPadding: EdgeInsets.zero,
+          
+          const SizedBox(height: 16),
+          
+          Row(
+            children: [
+              if (showQR) ...[
+                Expanded(
+                  child: OutlinedButton.icon(
+                    onPressed: () {
+                      // View QR
+                    },
+                    icon: const Icon(
+                      Icons.qr_code,
+                      size: 16,
+                      color: Color(0xFF64748B),
+                    ),
+                    label: const Text(
+                      'View QR',
+                      style: TextStyle(
+                        color: Color(0xFF64748B),
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    style: OutlinedButton.styleFrom(
+                      side: const BorderSide(color: Color(0xFFE2E8F0)),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 12),
+              ],
+              Expanded(
+                child: OutlinedButton.icon(
+                  onPressed: () {
+                    // Options
+                  },
+                  icon: const Icon(
+                    Icons.more_horiz,
+                    size: 16,
+                    color: Color(0xFF64748B),
+                  ),
+                  label: const Text(
+                    'Options',
+                    style: TextStyle(
+                      color: Color(0xFF64748B),
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    side: const BorderSide(color: Color(0xFFE2E8F0)),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
                 ),
               ),
-          ],
-        ),
-        onTap: () => _showBookingDetail(booking),
+            ],
+          ),
+        ],
       ),
     );
   }

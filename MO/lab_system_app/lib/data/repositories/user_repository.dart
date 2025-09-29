@@ -1,4 +1,5 @@
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../domain/models/user.dart';
 import '../../domain/enums/role.dart';
 import '../../core/utils/result.dart';
@@ -21,9 +22,9 @@ class UserRepository {
         id: DateTime.now().millisecondsSinceEpoch.toString(),
         name: name,
         studentId: studentId,
-        role: UserRole.values.firstWhere(
+        role: Role.values.firstWhere(
           (r) => r.name == role,
-          orElse: () => UserRole.student,
+          orElse: () => Role.student,
         ),
         createdAt: DateTime.now(),
       );
@@ -87,3 +88,7 @@ class UserRepository {
     }
   }
 }
+
+final userRepositoryProvider = Provider<UserRepository>((ref) {
+  return UserRepository();
+});

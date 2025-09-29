@@ -10,7 +10,7 @@ import '../../domain/enums/repeat_rule.dart';
 class HiveAdapters {
   static void registerAdapters() {
     // Register enum adapters
-    Hive.registerAdapter(UserRoleAdapter());
+    Hive.registerAdapter(RoleAdapter());
     Hive.registerAdapter(BookingStatusAdapter());
     Hive.registerAdapter(RepeatRuleAdapter());
     
@@ -33,7 +33,7 @@ class UserAdapter extends TypeAdapter<User> {
       id: reader.readString(),
       name: reader.readString(),
       studentId: reader.readBool() ? reader.readString() : null,
-      role: UserRole.values[reader.readByte()],
+      role: Role.values[reader.readByte()],
       createdAt: DateTime.fromMillisecondsSinceEpoch(reader.readInt()),
     );
   }
@@ -161,17 +161,17 @@ class BookingAdapter extends TypeAdapter<Booking> {
 }
 
 // Enum Adapters
-class UserRoleAdapter extends TypeAdapter<UserRole> {
+class RoleAdapter extends TypeAdapter<Role> {
   @override
   final int typeId = 10;
 
   @override
-  UserRole read(BinaryReader reader) {
-    return UserRole.values[reader.readByte()];
+  Role read(BinaryReader reader) {
+    return Role.values[reader.readByte()];
   }
 
   @override
-  void write(BinaryWriter writer, UserRole obj) {
+  void write(BinaryWriter writer, Role obj) {
     writer.writeByte(obj.index);
   }
 }
