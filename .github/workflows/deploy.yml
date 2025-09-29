@@ -3,7 +3,7 @@ name: Deploy React to Vercel
 on:
   push:
     branches:
-      - main # Chỉ triển khai khi push lên nhánh main
+      - main
 
 jobs:
   deploy:
@@ -18,33 +18,29 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '16' # Thay đổi từ '20' xuống '16' để tương thích với react-scripts 5.0.1
+          node-version: '16'
 
-      # Bước 3: Cài đặt dependencies trong thư mục fe
+      # Bước 3: Cài đặt dependencies
       - name: Install dependencies
         run: npm install
-        working-directory: ./fe # Chỉ định thư mục fe
+        working-directory: ./fe
 
       # Bước 4: Build dự án React
       - name: Build project
         run: npm run build
-        working-directory: ./fe # Chỉ định thư mục fe
+        working-directory: ./fe
         env:
-          CI: true # Đảm bảo build trong môi trường CI
+          CI: true
 
-      # Bước 5: Cài đặt Vercel CLI
-      - name: Install Vercel CLI
-        run: npm install --global vercel@latest
-
-      # Bước 6: Triển khai lên Vercel (Chỉnh sửa để chạy từ trong thư mục fe)
+      # Bước 5: Deploy to Vercel
       - name: Deploy to Vercel
-        run: |
-          if [ "${{ github.event_name }}" = "push" ]; then
-            vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
-          else
-            vercel --token ${{ secrets.VERCEL_TOKEN }}
-          fi
-        working-directory: ./fe # Chạy lệnh vercel từ bên trong thư mục fe
+        uses: amondnet/vercel-action@v25 # Action chính thức của Vercel
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }} # Token từ Vercel
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }} # ID của team hoặc tài khoản
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }} # ID của project
+          working-directory: ./fe # Thư mục chứa project
+          github-token: ${{ secrets.GITHUB_TOKEN }} # Tùy chọn, để link với GitHub
+          scope: namnm309 # Thêm scope là tên team
         env:
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
