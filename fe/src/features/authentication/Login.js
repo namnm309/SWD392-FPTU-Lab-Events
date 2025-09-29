@@ -1,15 +1,27 @@
 import React, { useState } from 'react';
+import { login as apiLogin } from './api';
 import './Login.css';
 
-function Login() {
+function Login({ onLogin, onSwitchToRegister }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [remember, setRemember] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Placeholder submit. Hook up to real auth later.
-    alert(`Login submitted:\nEmail: ${email}\nRemember: ${remember}`);
+    setError('');
+    setLoading(true);
+    try {
+      const { user, accessToken, refreshToken } = await apiLogin({ identifier: email, password });
+      if (!accessToken || !user) throw new Error('Invalid response');
+      onLogin && onLogin({ user, accessToken, refreshToken, remember });
+    } catch (err) {
+      setError(err.message || 'Login failed');
+    } finally {
+      setLoading(false);
+    }
   };
 
   // Demo filler removed to avoid unused variable warning
@@ -109,12 +121,19 @@ function Login() {
               </button>
             </div>
 
-            <button type="submit" className="btn btn-primary">
-              Sign In
+            {error && (
+              <div className="error-text" role="alert">{error}</div>
+            )}
+            <button type="submit" className="btn btn-primary" disabled={loading}>
+              {loading ? 'Signing in…' : 'Sign In'}
               <span className="arrow" aria-hidden>→</span>
             </button>
           </form>
 
+          <div className="form-footer">
+            <span>Don't have an account?</span>
+            <button type="button" className="link" onClick={onSwitchToRegister}>Sign Up</button>
+          </div>
           
         </div>
       </div>
