@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css';
+import './Register.css';
 import { register as apiRegister } from './api';
 
 function Register({ onRegistered, onSwitchToLogin }) {
@@ -187,7 +188,6 @@ function Register({ onRegistered, onSwitchToLogin }) {
 
             <button type="submit" className="btn btn-primary" disabled={loading}>
               {loading ? 'Signing up…' : 'Sign Up'}
-              <span className="arrow" aria-hidden>→</span>
             </button>
           </form>
 

@@ -126,7 +126,6 @@ function Login({ onLogin, onSwitchToRegister }) {
             )}
             <button type="submit" className="btn btn-primary" disabled={loading}>
               {loading ? 'Signing in…' : 'Sign In'}
-              <span className="arrow" aria-hidden>→</span>
             </button>
           </form>
 

@@ -78,7 +78,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 4rem 2rem;
   background: #fff;
   box-sizing: border-box;
 }
@@ -88,8 +88,7 @@
 }
 
 .panel { width: 100%; max-width: clamp(22rem, 42vw, 32rem); }
-.register-page .panel { max-width: clamp(22rem, 42vw, 34rem); }
-.register-page { height: 100dvh; overflow: hidden; }
+/* register-page specific styles moved to Register.css */
 .panel-header h2 { font-size: clamp(1.25rem, 1.5vw + 0.75rem, 1.75rem); margin: 0; }
 .panel-header p { margin-top: 0.375rem; color: #6b7280; }
 
