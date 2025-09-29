@@ -32,15 +32,13 @@ jobs:
         env:
           CI: true
 
-      # Bước 5: Deploy to Vercel
+      # Bước 5: Đặt biến môi trường (tùy chọn)
+      - name: Set environment variables
+        run: |
+          echo "VERCEL_ORG_ID=${{ secrets.VERCEL_ORG_ID }}" >> $GITHUB_ENV
+          echo "VERCEL_PROJECT_ID=${{ secrets.VERCEL_PROJECT_ID }}" >> $GITHUB_ENV
+
+      # Bước 6: Deploy to Vercel (bỏ --scope)
       - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v25 # Action chính thức của Vercel
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }} # Token từ Vercel
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }} # ID của team hoặc tài khoản
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }} # ID của project
-          working-directory: ./fe # Thư mục chứa project
-          github-token: ${{ secrets.GITHUB_TOKEN }} # Tùy chọn, để link với GitHub
-          scope: namnm309 # Thêm scope là tên team
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: npx vercel@25.1.0 --prod --token ${{ secrets.VERCEL_TOKEN }} -m githubCommitSha=$GITHUB_SHA -m githubCommitAuthorName=$GITHUB_ACTOR -m githubDeployment=1 -m githubOrg=namnm309o -m githubRepo=SWD392-FPTU-Lab-Events -m githubCommitMessage="update github action" -m githubCommitRef=main
+        working-directory: ./fe
