@@ -45,6 +45,7 @@ export async function register({ email, username, password, fullname, mssv }) {
   };
 }
 
-export default { login, register };
+const authApi = { login, register };
+export default authApi;
 
 
