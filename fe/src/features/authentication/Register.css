@@ -1,0 +1,6 @@
+.register-page .panel { max-width: clamp(22rem, 42vw, 34rem); min-height: 60vh; }
+.register-page { height: 100dvh; overflow: hidden; }
+
+/* Increase vertical spacing for the right side on register page */
+.register-page .login-right { margin: 2rem 0; }
+

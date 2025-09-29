@@ -883,4 +883,27 @@ fe/Thumbs.db
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
+# --- Project-specific overrides (FPTU Lab Events) ---
+# Ensure all .NET build outputs under BE are ignored (even if nested)
+BE/**/[Bb]in/
+BE/**/[Oo]bj/
+BE/**/[Dd]ebug*/
+BE/**/[Rr]elease*/
+BE/**/.vs/
+
+# Extra transient caches frequently created by Visual Studio/MSBuild
+**/*.AssemblyInfoInputs.cache
+**/*.assets.cache
+**/*.AssemblyReference.cache
+**/*.GeneratedMSBuildEditorConfig.editorconfig
+**/*.nuget.dgspec.json
+**/*.nuget.g.props
+**/*.nuget.g.targets
+**/project.assets.json
+**/project.nuget.cache
+**/*.dswa.cache.json
+
+# AssemblyInfo generated into obj folders by SDK-style projects
+**/obj/**/*.AssemblyInfo.cs
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio,visualstudiocode,csharp,reactnative,vercel
