@@ -1,20 +1,15 @@
-**/.env
-**/.env.*
-!**/env.sample
-!**/.env.example
+# Visual Studio and .NET build artifacts (scoped to BE)
 
-# IDE and build artifacts
+# IDE cache
 .vs/
-**/bin/
-**/obj/
 
-# User-specific/temporary
-*.user
-*.suo
-*.cache
-*.log
+# Build outputs
+**/[Bb]in/
+**/[Oo]bj/
+**/[Dd]ebug*/
+**/[Rr]elease*/
 
-# Visual Studio/MSBuild transient files for all projects in this solution
+# Transient MSBuild/NuGet files
 **/*.AssemblyInfoInputs.cache
 **/*.assets.cache
 **/*.AssemblyReference.cache
@@ -26,3 +21,11 @@
 **/project.nuget.cache
 **/*.dswa.cache.json
 **/obj/**/*.AssemblyInfo.cs
+
+# User-specific/temporary
+*.user
+*.suo
+*.cache
+*.log
+
+
