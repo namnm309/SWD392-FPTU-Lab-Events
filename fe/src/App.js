@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AdminDashboard, Login } from './features';
+import { AdminDashboard, Login, Home } from './features';
 import { Register } from './features/authentication';
 // styles moved to global.css
 
@@ -18,6 +18,7 @@ function App() {
 
   const isAdmin = auth?.user?.roles?.includes('Admin');
   if (isAdmin) return <AdminDashboard />;
+  if (auth) return <Home />;
 
   return (
     <div className="App">
