@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import './Login.css';
-import './Register.css';
+// styles moved to global.css
 import { register as apiRegister } from './api';
 
 function Register({ onRegistered, onSwitchToLogin }) {

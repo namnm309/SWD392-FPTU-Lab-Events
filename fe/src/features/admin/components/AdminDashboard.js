@@ -1,5 +1,5 @@
 import React from 'react';
-import './AdminDashboard.css';
+// styles moved to global.css
 
 const AdminDashboard = () => {
   const recentBookings = [

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AdminDashboard, Login } from './features';
 import { Register } from './features/authentication';
-import './App.css';
+// styles moved to global.css
 
 function App() {
   const [auth, setAuth] = useState(null);
