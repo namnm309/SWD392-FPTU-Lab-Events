@@ -1,16 +1,46 @@
 const API_BASE = process.env.REACT_APP_API_BASE_URL || 'https://localhost:7241';
 
 async function request(path, options) {
-  const resp = await fetch(`${API_BASE}${path}`, {
-    headers: { 'Content-Type': 'application/json', ...(options?.headers || {}) },
-    ...options
-  });
-  const data = await resp.json().catch(() => ({}));
-  if (!resp.ok) {
-    const message = data?.Error || data?.message || 'Request failed';
-    throw new Error(message);
+  let resp;
+  try {
+    resp = await fetch(`${API_BASE}${path}`, {
+      headers: { 'Content-Type': 'application/json', ...(options?.headers || {}) },
+      ...options
+    });
+  } catch (networkErr) {
+    const err = new Error('Không thể kết nối tới máy chủ');
+    err.cause = networkErr;
+    err.status = 0;
+    throw err;
   }
-  return data?.Data || data; // backend sometimes wraps in { Data, Code, Message }
+
+  const text = await resp.text().catch(() => '');
+  let data;
+  try {
+    data = text ? JSON.parse(text) : {};
+  } catch {
+    data = { raw: text };
+  }
+
+  if (!resp.ok) {
+    const serverData = data?.Data ?? data;
+    const possibleMessages = [
+      serverData?.Message,
+      serverData?.message,
+      serverData?.Error,
+      serverData?.error,
+    ].filter(Boolean);
+    const message = possibleMessages[0] || `Yêu cầu thất bại (${resp.status})`;
+
+    const err = new Error(message);
+    err.status = resp.status;
+    err.data = serverData;
+    err.details = serverData?.Errors || serverData?.errors || serverData?.detail || serverData?.Raw || null;
+    throw err;
+  }
+
+  // Normalize successful response shape: unwrap { data/code/message } or { Data/Code/Message }
+  return (data && (data.Data ?? data.data)) || data;
 }
 
 export async function login({ identifier, password }) {

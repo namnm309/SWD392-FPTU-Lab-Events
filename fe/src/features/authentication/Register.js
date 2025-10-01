@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import './Login.css';
-import './Register.css';
+// styles moved to global.css
 import { register as apiRegister } from './api';
 
 function Register({ onRegistered, onSwitchToLogin }) {
@@ -12,10 +11,14 @@ function Register({ onRegistered, onSwitchToLogin }) {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
+  const [fieldErrors, setFieldErrors] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
+    setSuccess('');
+    setFieldErrors(null);
     if (password !== confirmPassword) {
       setError('Passwords do not match');
       return;
@@ -23,9 +26,18 @@ function Register({ onRegistered, onSwitchToLogin }) {
     setLoading(true);
     try {
       const { user, accessToken, refreshToken } = await apiRegister({ email, username, password, fullname, mssv });
+      const toastMsg = 'Your account has been created successfully. Please sign in to continue.';
+      setSuccess(toastMsg);
       onRegistered && onRegistered({ user, accessToken, refreshToken });
+      setTimeout(() => {
+        onSwitchToLogin && onSwitchToLogin();
+      }, 2000);
     } catch (err) {
-      setError(err.message || 'Registration failed');
+      const isObject = (v) => v && typeof v === 'object';
+      const details = isObject(err?.details) ? err.details : (isObject(err?.data) ? err.data : null);
+      setFieldErrors(details);
+      const msg = err?.message || 'Registration failed';
+      setError(msg);
     } finally {
       setLoading(false);
     }
@@ -182,8 +194,42 @@ function Register({ onRegistered, onSwitchToLogin }) {
               </div>
             </div>
 
+            {success && (
+              <div
+                className="success-text"
+                role="status"
+                style={{
+                  color: '#0f5132',
+                  background: '#e7f7ee',
+                  border: '1px solid #b7f0d1',
+                  padding: 10,
+                  borderRadius: 8,
+                  fontStyle: 'italic',
+                  fontSize: '0.9rem'
+                }}
+              >
+                {success}
+              </div>
+            )}
             {error && (
               <div className="error-text" role="alert">{error}</div>
+            )}
+            {fieldErrors && (
+              <div className="error-text" role="alert" style={{ marginTop: 8 }}>
+                {Array.isArray(fieldErrors) ? (
+                  <ul>
+                    {fieldErrors.map((e, i) => (
+                      <li key={i}>{typeof e === 'string' ? e : JSON.stringify(e)}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <ul>
+                    {Object.entries(fieldErrors).map(([k, v]) => (
+                      <li key={k}><strong>{k}:</strong> {Array.isArray(v) ? v.join(', ') : (typeof v === 'string' ? v : JSON.stringify(v))}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             )}
 
             <button type="submit" className="btn btn-primary" disabled={loading}>

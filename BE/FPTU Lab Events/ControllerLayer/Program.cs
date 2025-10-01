@@ -55,6 +55,21 @@ namespace ControllerLayer
                 c.AddSecurityRequirement(securityRequirement);
             });
 
+            // CORS cho frontend
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowFrontend", policy =>
+                {
+                    policy.WithOrigins(
+                        "http://localhost:3000",
+                        "https://localhost:3000"
+                    )
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowCredentials();
+                });
+            });
+
             // Cấu hình DbContext
             builder.Services.AddDbContext<LabDbContext>(options =>
                 options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -115,6 +130,8 @@ namespace ControllerLayer
             //}
 
             app.UseHttpsRedirection();
+
+            app.UseCors("AllowFrontend");
 
             app.UseAuthentication();
             app.UseAuthorization();
