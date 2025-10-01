@@ -5,7 +5,7 @@
 ![DemoDb](https://github.com/namnm309o/SWD392-FPTU-Lab-Events/blob/main/Other/Database.png)
 
 
-
+![System Architect](https://github.com/namnm309o/SWD392-FPTU-Lab-Events/blob/main/Other/System_Architecture_Diagram.drawio.png)
 
 Link Edit Db 
 
