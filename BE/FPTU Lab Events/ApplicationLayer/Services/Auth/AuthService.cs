@@ -9,6 +9,7 @@ using DomainLayer.Constants;
 using DomainLayer.Entities;
 using DomainLayer.Enum;
 using InfrastructureLayer.Core.JWT;
+using InfrastructureLayer.Core.Mail;
 using InfrastructureLayer.Data;
 using InfrastructureLayer.Repository;
 using Microsoft.EntityFrameworkCore;
@@ -33,12 +34,14 @@ public class AuthService : IAuthService
   private readonly LabDbContext _db;
   private readonly IJwtService _jwt;
   private readonly IConfiguration _config;
+  private readonly IMailService _mailService;
 
-  public AuthService(LabDbContext db, IJwtService jwt, IConfiguration config)
+  public AuthService(LabDbContext db, IJwtService jwt, IConfiguration config, IMailService mailService)
   {
     _db = db;
     _jwt = jwt;
     _config = config;
+    _mailService = mailService;
   }
 
   public async Task<TokenResponse> RegisterAsync(RegisterRequest request)
@@ -183,19 +186,22 @@ public class AuthService : IAuthService
     if (user == null)
     {
       var roleStudent = await _db.Roles.FirstAsync(r => r.name == "Student");
+      var initialPlainPassword = GenerateReadablePassword(12);
       user = new Users
       {
         Id = Guid.NewGuid(),
         Email = email,
         Username = email.Split('@')[0],
         Fullname = googlePayload.Name ?? email,
-        Password = "", // no password for Google-only account
+        Password = BCrypt.Net.BCrypt.HashPassword(initialPlainPassword),
         status = UserStatus.Active,
         CreatedAt = DateTime.UtcNow,
         LastUpdatedAt = DateTime.UtcNow,
       };
       user.Roles.Add(roleStudent);
       _db.Users.Add(user);
+
+      await TrySendInitialPasswordEmailAsync(email, user.Username, initialPlainPassword);
     }
 
     var (session, refreshPlain) = CreateSession(user, device: "google-oauth", ipAddress: null);
@@ -215,19 +221,22 @@ public class AuthService : IAuthService
     if (user == null)
     {
       var roleStudent = await _db.Roles.FirstAsync(r => r.name == "Student");
+      var initialPlainPassword = GenerateReadablePassword(12);
       user = new Users
       {
         Id = Guid.NewGuid(),
         Email = email,
         Username = email.Split('@')[0],
         Fullname = googlePayload.Name ?? email,
-        Password = "",
+        Password = BCrypt.Net.BCrypt.HashPassword(initialPlainPassword),
         status = UserStatus.Active,
         CreatedAt = DateTime.UtcNow,
         LastUpdatedAt = DateTime.UtcNow,
       };
       user.Roles.Add(roleStudent);
       _db.Users.Add(user);
+
+      await TrySendInitialPasswordEmailAsync(email, user.Username, initialPlainPassword);
     }
 
     var (session, refreshPlain) = CreateSession(user, device: "google-idtoken", ipAddress: null);
@@ -282,6 +291,45 @@ public class AuthService : IAuthService
     var bytes = new byte[length];
     rng.GetBytes(bytes);
     return Convert.ToBase64String(bytes);
+  }
+
+  private static string GenerateReadablePassword(int length)
+  {
+    const string upper = "ABCDEFGHJKLMNPQRSTUVWXYZ";
+    const string lower = "abcdefghijkmnopqrstuvwxyz";
+    const string digits = "23456789";
+    const string specials = "@#$%&*?";
+    var all = upper + lower + digits + specials;
+
+    var rng = System.Security.Cryptography.RandomNumberGenerator.Create();
+    var buffer = new byte[length];
+    var chars = new char[length];
+    rng.GetBytes(buffer);
+    for (var i = 0; i < length; i++)
+    {
+      var idx = buffer[i] % all.Length;
+      chars[i] = all[idx];
+    }
+    return new string(chars);
+  }
+
+  private async Task TrySendInitialPasswordEmailAsync(string email, string username, string plainPassword)
+  {
+    try
+    {
+      var subject = "FPTU Lab Events - Mật khẩu lần đầu";
+      var message = $@"<p>Xin chào {System.Net.WebUtility.HtmlEncode(username)},</p>
+<p>Tài khoản của bạn đã được tạo khi đăng nhập bằng email FPT.</p>
+<p><b>Tên đăng nhập:</b> {System.Net.WebUtility.HtmlEncode(username)}<br/>
+<b>Mật khẩu tạm thời:</b> {System.Net.WebUtility.HtmlEncode(plainPassword)}</p>
+<p>Vì lý do bảo mật, hãy đăng nhập và đổi mật khẩu ngay sau lần đầu sử dụng.</p>
+<p>Trân trọng,<br/>FPTU Lab Events</p>";
+      await _mailService.SendEmailAsync(email, subject, message);
+    }
+    catch (Exception ex)
+    {
+      Console.WriteLine($"[MailError] Failed to send initial password to {email}: {ex.Message}");
+    }
   }
 }
 

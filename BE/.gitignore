@@ -1,0 +1,31 @@
+# Visual Studio and .NET build artifacts (scoped to BE)
+
+# IDE cache
+.vs/
+
+# Build outputs
+**/[Bb]in/
+**/[Oo]bj/
+**/[Dd]ebug*/
+**/[Rr]elease*/
+
+# Transient MSBuild/NuGet files
+**/*.AssemblyInfoInputs.cache
+**/*.assets.cache
+**/*.AssemblyReference.cache
+**/*.GeneratedMSBuildEditorConfig.editorconfig
+**/*.nuget.dgspec.json
+**/*.nuget.g.props
+**/*.nuget.g.targets
+**/project.assets.json
+**/project.nuget.cache
+**/*.dswa.cache.json
+**/obj/**/*.AssemblyInfo.cs
+
+# User-specific/temporary
+*.user
+*.suo
+*.cache
+*.log
+
+

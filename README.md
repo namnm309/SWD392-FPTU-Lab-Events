@@ -2,10 +2,14 @@
 
 
 
-![DemoDb](https://github.com/namnm309/SWD392-Project/blob/main/Other/SWD392.png)
+![DemoDb](https://github.com/namnm309o/SWD392-FPTU-Lab-Events/blob/main/Other/Database.png)
 
 
+![System Architect](https://github.com/namnm309o/SWD392-FPTU-Lab-Events/blob/main/Other/System_Architecture_Diagram.drawio.png)
 
+Link Project Template 
+
+https://docs.google.com/spreadsheets/d/1HufiK4_3U5h88D6NbMbsIxlhxmlGH3a6jE82tko8DNU/edit?gid=903370297#gid=903370297
 
 Link Edit Db 
 
