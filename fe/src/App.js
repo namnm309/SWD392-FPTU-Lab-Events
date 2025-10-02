@@ -1,28 +1,41 @@
 import React, { useState } from 'react';
-import { AdminDashboard } from './features';
+import { AdminDashboard, Login } from './features';
+import { Register } from './features/authentication';
 import './App.css';
 
 function App() {
-  const [showAdmin, setShowAdmin] = useState(false);
+  const [auth, setAuth] = useState(null);
+  const [mode, setMode] = useState('login'); // 'login' | 'register'
 
-  if (showAdmin) {
-    return <AdminDashboard />;
-  }
+  const handleLoggedIn = (payload) => {
+    const { user, accessToken, refreshToken, remember } = payload;
+    const storage = remember ? window.localStorage : window.sessionStorage;
+    storage.setItem('accessToken', accessToken);
+    storage.setItem('refreshToken', refreshToken);
+    storage.setItem('user', JSON.stringify(user));
+    setAuth({ user, accessToken, refreshToken });
+  };
+
+  const isAdmin = auth?.user?.roles?.includes('Admin');
+  if (isAdmin) return <AdminDashboard />;
 
   return (
     <div className="App">
-      <div className="simple-home">
-        <div className="simple-content">
-          <h1>FPT Lab Events</h1>
-          <p>Click the button below to access the Admin Dashboard</p>
-          <button 
-            className="btn btn-primary"
-            onClick={() => setShowAdmin(true)}
-          >
-            Go to Admin Dashboard
-          </button>
-        </div>
-      </div>
+      {mode === 'login' ? (
+        <Login onLogin={handleLoggedIn} onSwitchToRegister={() => setMode('register')} />
+      ) : (
+        <Register
+          onRegistered={({ user, accessToken, refreshToken }) => {
+            // auto-login sau khi đăng ký
+            const storage = window.localStorage;
+            storage.setItem('accessToken', accessToken);
+            storage.setItem('refreshToken', refreshToken);
+            storage.setItem('user', JSON.stringify(user));
+            setAuth({ user, accessToken, refreshToken });
+          }}
+          onSwitchToLogin={() => setMode('login')}
+        />
+      )}
     </div>
   );
 }
